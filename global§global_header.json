@@ -1,0 +1,319 @@
+{
+  "meta": {
+    "file": "jane-astro/src/components/Header.astro",
+    "slug": "global_header",
+    "component": "global_header",
+    "schemaVersion": 3,
+    "dataType": "inline",
+    "isGlobal": true,
+    "collections": {
+      "links": {
+        "path": "content.links",
+        "itemRole": "inline",
+        "keyField": "label",
+        "fields": {
+          "label": {
+            "path": "label.value",
+            "elementType": "link"
+          },
+          "href": {
+            "path": "href.value",
+            "elementType": "link"
+          }
+        },
+        "source": {
+          "type": "inline",
+          "location": "frontmatter"
+        },
+        "iterableSelector": "[data-elid='global_header'] + header nav > div:nth-child(2) > a",
+        "notes": "Desktop navigation links — always visible. Prior capture mapped wrong DOM elements (logo, CTA, mobile links) to these items. Needs re-capture investigation.",
+        "_expectedCount": 5,
+        "_hardcoded": true,
+        "_hardcodedSource": "src/components/Header.astro",
+        "libraryKey": "content.links"
+      },
+      "pages": {
+        "path": "content.pages",
+        "itemRole": "inline",
+        "keyField": "label",
+        "fields": {
+          "label": {
+            "path": "label.value",
+            "elementType": "link"
+          },
+          "href": {
+            "path": "href.value",
+            "elementType": "link"
+          }
+        },
+        "source": {
+          "type": "inline",
+          "location": "frontmatter"
+        },
+        "iterableSelector": "[data-elid='global_header'] + header .relative[x-data] > div a",
+        "notes": "Pages dropdown — HIDDEN by Alpine.js (x-show with display:none default). Cannot be captured in default state.",
+        "_expectedCount": 7,
+        "_alpineHidden": true,
+        "_hardcoded": true,
+        "_hardcodedSource": "src/components/Header.astro",
+        "libraryKey": "content.pages"
+      }
+    },
+    "_extractedAt": "2026-01-25T15:30:00.000Z",
+    "_source": "manual",
+    "_alpineJs": {
+      "risk": "high",
+      "hiddenElements": [
+        {
+          "name": "Pages dropdown (desktop)",
+          "directive": "x-show.transition=\"open\"",
+          "defaultState": "hidden",
+          "trigger": "@click on Pages button",
+          "affectsCollection": "pages"
+        },
+        {
+          "name": "Mobile menu overlay",
+          "directive": "x-show=\"mobileMenuOpen\"",
+          "defaultState": "hidden",
+          "trigger": "@click on hamburger button",
+          "affectsCollection": null
+        },
+        {
+          "name": "Mobile menu popover",
+          "directive": "x-show=\"mobileMenuOpen\"",
+          "defaultState": "hidden",
+          "trigger": "@click on hamburger button",
+          "affectsCollection": "links (mobile duplicate)"
+        },
+        {
+          "name": "Mobile pages dropdown",
+          "directive": "x-show.transition=\"open\"",
+          "defaultState": "hidden",
+          "trigger": "@click on mobile Pages button",
+          "affectsCollection": "pages (mobile duplicate)"
+        }
+      ],
+      "alwaysVisibleElements": [
+        "Logo (header > nav > div:nth-child(1) > a > img)",
+        "Desktop nav links (header > nav > div:nth-child(2) > a) — 5 links",
+        "Pages dropdown button (visible, but dropdown content is hidden)",
+        "CTA button — 'Book a call'"
+      ],
+      "captureStrategy": "Capture in default state. Desktop links and CTA are always visible. Pages dropdown and mobile menu are Alpine-hidden (display:none) — fields stay isShown:false."
+    },
+    "_hardcoded": true,
+    "_hardcodedSource": "src/components/Header.astro"
+  },
+  "content": {
+    "logo": {
+      "value": "@images/logo.png",
+      "elementType": "image",
+      "isShown": false,
+      "visibilityState": "hidden:not_rendered",
+      "note": "Content in data source but not rendered in current DOM"
+    },
+    "ctaButton": {
+      "value": "Book a call",
+      "elementType": "text",
+      "relativePath": "./div/nav/div[3]"
+    },
+    "links": [
+      {
+        "label": {
+          "value": "Home",
+          "elementType": "link",
+          "isShown": false
+        },
+        "href": {
+          "value": "/",
+          "elementType": "link",
+          "isShown": false
+        },
+        "originalContent": "Home"
+      },
+      {
+        "label": {
+          "value": "About",
+          "elementType": "link",
+          "isShown": false
+        },
+        "href": {
+          "value": "/about",
+          "elementType": "link",
+          "isShown": false
+        },
+        "originalContent": "About"
+      },
+      {
+        "label": {
+          "value": "Work",
+          "elementType": "link",
+          "isShown": false
+        },
+        "href": {
+          "value": "/work",
+          "elementType": "link",
+          "isShown": false
+        },
+        "originalContent": "Work"
+      },
+      {
+        "label": {
+          "value": "Blog",
+          "elementType": "link",
+          "isShown": false
+        },
+        "href": {
+          "value": "/blog",
+          "elementType": "link",
+          "isShown": false
+        },
+        "originalContent": "Blog"
+      },
+      {
+        "label": {
+          "value": "Contact",
+          "elementType": "link",
+          "isShown": false
+        },
+        "href": {
+          "value": "/contact",
+          "elementType": "link",
+          "isShown": false
+        },
+        "originalContent": "Contact"
+      }
+    ],
+    "pages": [
+      {
+        "label": {
+          "value": "Home",
+          "elementType": "link",
+          "isShown": false
+        },
+        "href": {
+          "value": "/",
+          "elementType": "link",
+          "isShown": false
+        },
+        "originalContent": "Home"
+      },
+      {
+        "label": {
+          "value": "About",
+          "elementType": "link",
+          "isShown": false
+        },
+        "href": {
+          "value": "/about",
+          "elementType": "link",
+          "isShown": false
+        },
+        "originalContent": "About"
+      },
+      {
+        "label": {
+          "value": "Work",
+          "elementType": "link",
+          "isShown": false
+        },
+        "href": {
+          "value": "/work",
+          "elementType": "link",
+          "isShown": false
+        },
+        "originalContent": "Work"
+      },
+      {
+        "label": {
+          "value": "Case study",
+          "elementType": "link",
+          "isShown": false
+        },
+        "href": {
+          "value": "/work/horizons-in-perspective",
+          "elementType": "link",
+          "isShown": false
+        },
+        "originalContent": "Case study"
+      },
+      {
+        "label": {
+          "value": "Blog",
+          "elementType": "link",
+          "isShown": false
+        },
+        "href": {
+          "value": "/blog",
+          "elementType": "link",
+          "isShown": false
+        },
+        "originalContent": "Blog"
+      },
+      {
+        "label": {
+          "value": "Blog post",
+          "elementType": "link",
+          "isShown": false
+        },
+        "href": {
+          "value": "/blog/how-i-use-tailwind-to-design-from-scratch",
+          "elementType": "link",
+          "isShown": false
+        },
+        "originalContent": "Blog post"
+      },
+      {
+        "label": {
+          "value": "Contact",
+          "elementType": "link",
+          "isShown": false
+        },
+        "href": {
+          "value": "/contact",
+          "elementType": "link",
+          "isShown": false
+        },
+        "originalContent": "Contact"
+      }
+    ]
+  },
+  "styling": {
+    "collectionViews": {},
+    "collectionSelections": {
+      "links": {
+        "ids": [
+          "home",
+          "about",
+          "work",
+          "blog",
+          "contact"
+        ]
+      },
+      "pages": {
+        "ids": [
+          "home",
+          "about",
+          "work",
+          "case-study",
+          "blog",
+          "blog-post",
+          "contact"
+        ]
+      }
+    },
+    "collectionFilters": {}
+  },
+  "settings": {
+    "marker": "<div data-elid=\"global_header\" data-elid-type=\"navigation\" data-elid-global=\"true\">",
+    "fieldSources": {
+      "content": {
+        "type": "inline",
+        "location": "frontmatter"
+      }
+    },
+    "sort_order": 1,
+    "_hardcoded": true,
+    "_hardcodedSource": "src/components/Header.astro"
+  }
+}

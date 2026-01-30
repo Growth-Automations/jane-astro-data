@@ -1,0 +1,213 @@
+{
+  "meta": {
+    "file": "src/pages/about.astro",
+    "slug": "work_experience_section",
+    "component": "work_experience_section",
+    "schemaVersion": 3,
+    "dataType": "inline",
+    "collections": {
+      "companies": {
+        "path": "content.companies",
+        "itemRole": "inline",
+        "keyField": "name",
+        "iterableSelector": "[data-elid='work_experience_section'] + * ol > li",
+        "fields": {
+          "name": {
+            "path": "name.value",
+            "elementType": "text"
+          },
+          "dates": {
+            "path": "dates.value",
+            "elementType": "text"
+          },
+          "description": {
+            "path": "description.value",
+            "elementType": "text"
+          },
+          "logo": {
+            "path": "logo.value"
+          }
+        },
+        "source": {
+          "type": "inline",
+          "module": "src/components/WorkExperience.astro"
+        },
+        "_expectedCount": 5,
+        "_hardcoded": true,
+        "_hardcodedSource": "src/components/WorkExperience.astro",
+        "libraryKey": "content.companies"
+      }
+    }
+  },
+  "content": {
+    "title": {
+      "value": "My career journey so far",
+      "relativePath": "./div/div/div",
+      "elementType": "text"
+    },
+    "description": {
+      "value": "Panna french americano macchiato breve roast cinnamon cortado strong white pumpkin et single press aftertaste.",
+      "relativePath": "./div",
+      "elementType": "text"
+    },
+    "ctaText": {
+      "value": "Download CV",
+      "relativePath": "./div/div",
+      "elementType": "text"
+    },
+    "companies": [
+      {
+        "name": {
+          "value": "Adobe",
+          "isShown": false
+        },
+        "dates": {
+          "value": "Dec 2016 - Oct 2017",
+          "relativePath": "./div/div/ol/li[1]/div/p[1]",
+          "elementType": "text"
+        },
+        "description": {
+          "value": "Breve macchiato bar cortado dripper shot sweet robust qui. Et café whipped go white that espresso fair origin pot cream est cup.",
+          "relativePath": "./div/div/ol/li[1]/p",
+          "elementType": "text"
+        },
+        "logo": {
+          "value": {
+            "src": "@images/logos/icons/adobe.png",
+            "alt": "Adobe"
+          },
+          "isShown": false,
+          "visibilityState": "hidden:not_rendered",
+          "note": "Content in data source but not rendered in current DOM"
+        }
+      },
+      {
+        "name": {
+          "value": "Dropbox",
+          "isShown": false
+        },
+        "dates": {
+          "value": "Nov 2017 - Apr 2018",
+          "relativePath": "./div/div/ol/li[2]/div/p[1]",
+          "elementType": "text"
+        },
+        "description": {
+          "value": "Breve macchiato bar cortado dripper shot sweet robust qui. Et café whipped go white that espresso fair origin pot cream est cup.",
+          "relativePath": "./div/div/ol/li[2]/p",
+          "elementType": "text"
+        },
+        "logo": {
+          "value": {
+            "src": "@images/logos/icons/dropbox.png",
+            "alt": "Dropbox"
+          },
+          "isShown": false,
+          "visibilityState": "hidden:not_rendered",
+          "note": "Content in data source but not rendered in current DOM"
+        }
+      },
+      {
+        "name": {
+          "value": "Gumroad",
+          "isShown": false
+        },
+        "dates": {
+          "value": "Apr 2018 - Jan 2019",
+          "relativePath": "./div/div/ol/li[3]/div/p[1]",
+          "elementType": "text"
+        },
+        "description": {
+          "value": "Breve macchiato bar cortado dripper shot sweet robust qui. Et café whipped go white that espresso fair origin pot cream est cup.",
+          "relativePath": "./div/div/ol/li[3]/p",
+          "elementType": "text"
+        },
+        "logo": {
+          "value": {
+            "src": "@images/logos/icons/gumroad.png",
+            "alt": "Gumroad"
+          },
+          "isShown": false,
+          "visibilityState": "hidden:not_rendered",
+          "note": "Content in data source but not rendered in current DOM"
+        }
+      },
+      {
+        "name": {
+          "value": "Mailchimp",
+          "isShown": false
+        },
+        "dates": {
+          "value": "Jan 2019 - Mar 2020",
+          "relativePath": "./div/div/ol/li[4]/div/p[1]",
+          "elementType": "text"
+        },
+        "description": {
+          "value": "Breve macchiato bar cortado dripper shot sweet robust qui. Et café whipped go white that espresso fair origin pot cream est cup.",
+          "relativePath": "./div/div/ol/li[4]/p",
+          "elementType": "text"
+        },
+        "logo": {
+          "value": {
+            "src": "@images/logos/icons/mailchimp.png",
+            "alt": "Mailchimp"
+          },
+          "isShown": false,
+          "visibilityState": "hidden:not_rendered",
+          "note": "Content in data source but not rendered in current DOM"
+        }
+      },
+      {
+        "name": {
+          "value": "Shopify",
+          "isShown": false
+        },
+        "dates": {
+          "value": "Mar 2020 - Present",
+          "relativePath": "./div/div/ol/li[5]/div/p[1]",
+          "elementType": "text"
+        },
+        "description": {
+          "value": "Breve macchiato bar cortado dripper shot sweet robust qui. Et café whipped go white that espresso fair origin pot cream est cup.",
+          "relativePath": "./div/div/ol/li[5]/p",
+          "elementType": "text"
+        },
+        "logo": {
+          "value": {
+            "src": "@images/logos/icons/shopify.png",
+            "alt": "Shopify"
+          },
+          "isShown": false,
+          "visibilityState": "hidden:not_rendered",
+          "note": "Content in data source but not rendered in current DOM"
+        }
+      }
+    ]
+  },
+  "styling": {
+    "collectionViews": {},
+    "collectionSelections": {
+      "companies": {
+        "ids": [
+          "adobe",
+          "dropbox",
+          "gumroad",
+          "mailchimp",
+          "shopify"
+        ]
+      }
+    },
+    "collectionFilters": {}
+  },
+  "settings": {
+    "marker": "<div data-elid=\"work_experience_section\" data-elid-type=\"section\">",
+    "fieldSources": {
+      "content": {
+        "type": "inline",
+        "module": "src/pages/about.astro"
+      }
+    },
+    "sort_order": 2,
+    "_hardcoded": true,
+    "_hardcodedSource": "src/components/WorkExperience.astro"
+  }
+}

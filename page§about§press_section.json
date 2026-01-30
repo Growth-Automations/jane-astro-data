@@ -1,0 +1,397 @@
+{
+  "meta": {
+    "file": "jane-astro/src/components/Press.astro",
+    "slug": "press_section",
+    "component": "press_section",
+    "schemaVersion": 3,
+    "dataType": "inline",
+    "collections": {
+      "items": {
+        "path": "content.items",
+        "itemRole": "inline",
+        "keyField": "title",
+        "fields": {
+          "title": {
+            "path": "title.value",
+            "elementType": "text"
+          },
+          "category": {
+            "path": "category.value",
+            "elementType": "text"
+          },
+          "icon": {
+            "path": "icon.value",
+            "elementType": "icon"
+          },
+          "link.href": {
+            "path": "link.href.value",
+            "elementType": "link"
+          },
+          "link.label": {
+            "path": "link.label.value",
+            "elementType": "link"
+          },
+          "link.displayUrl": {
+            "path": "link.displayUrl.value",
+            "elementType": "link"
+          }
+        },
+        "source": {
+          "type": "inline",
+          "location": "frontmatter"
+        },
+        "iterableSelector": "[data-elid='press_section'] + section .break-inside-avoid-column",
+        "libraryKey": "content.items"
+      }
+    },
+    "_extractedAt": "2026-01-25T14:33:37.787Z",
+    "_source": "scaffold-component.mjs"
+  },
+  "content": {
+    "items": [
+      {
+        "title": {
+          "value": "The Future of Software Engineering with Jane Doe",
+          "elementType": "text",
+          "relativePath": "./div/div[2]/div[1]/div/h3"
+        },
+        "category": {
+          "value": "Podcast",
+          "elementType": "text",
+          "relativePath": "./div/div[2]/div[1]/div/div[1]"
+        },
+        "icon": {
+          "value": "podcast",
+          "elementType": "text",
+          "relativePath": "./div/div[2]/div[2]/div/div[1]"
+        },
+        "link": {
+          "href": {
+            "value": "#",
+            "elementType": "link",
+            "isShown": false
+          },
+          "label": {
+            "value": "Listen to podcast",
+            "elementType": "link",
+            "relativePath": "./div/div[2]/div[1]/div/div[2]/a"
+          },
+          "displayUrl": {
+            "value": "spotify.com",
+            "elementType": "text",
+            "relativePath": "./div/div[2]/div[1]/div/div[2]/p"
+          }
+        }
+      },
+      {
+        "title": {
+          "value": "Building a Sense of Community Around Your Business - with Duncan Jones Junior",
+          "elementType": "text",
+          "relativePath": "./div/div[2]/div[2]/div/h3"
+        },
+        "category": {
+          "value": "Podcast",
+          "elementType": "text",
+          "relativePath": "./div/div[2]/div[6]/div/div[1]"
+        },
+        "icon": {
+          "value": "podcast",
+          "elementType": "text",
+          "relativePath": "./div/div[2]/div[7]/div/div[1]"
+        },
+        "link": {
+          "href": {
+            "value": "#",
+            "elementType": "link",
+            "isShown": false
+          },
+          "label": {
+            "value": "Listen to podcast",
+            "elementType": "link",
+            "relativePath": "./div/div[2]/div[2]/div/div[2]/a"
+          },
+          "displayUrl": {
+            "value": "spotify.com",
+            "elementType": "text",
+            "relativePath": "./div/div[2]/div[2]/div/div[2]/p"
+          }
+        }
+      },
+      {
+        "title": {
+          "value": "14 Things You Should Know Before Starting With Ruby On Rails",
+          "elementType": "text",
+          "relativePath": "./div/div[2]/div[3]/div/h3"
+        },
+        "category": {
+          "value": "Article",
+          "elementType": "text",
+          "relativePath": "./div/div[2]/div[3]/div/div[1]"
+        },
+        "icon": {
+          "value": "article",
+          "elementType": "text",
+          "relativePath": "./div/div[2]/div[5]/div/div[1]"
+        },
+        "link": {
+          "href": {
+            "value": "#",
+            "elementType": "link",
+            "isShown": false
+          },
+          "label": {
+            "value": "Read the article",
+            "elementType": "link",
+            "relativePath": "./div/div[2]/div[3]/div/div[2]/a"
+          },
+          "displayUrl": {
+            "value": "gorails.com",
+            "elementType": "text",
+            "relativePath": "./div/div[2]/div[3]/div/div[2]/p"
+          }
+        }
+      },
+      {
+        "title": {
+          "value": "Why Service Objects Aren't Evil (And Why You Should Start Using Them)",
+          "elementType": "text",
+          "relativePath": "./div/div[2]/div[4]/div/h3"
+        },
+        "category": {
+          "value": "RailsConf 2022",
+          "elementType": "text",
+          "relativePath": "./div/div[2]/div[4]/div/div[1]"
+        },
+        "icon": {
+          "value": {
+            "viewBox": "0 0 16 16"
+          },
+          "elementType": "icon",
+          "relativePath": "./div/div[2]/div[4]/div/div[1]/svg"
+        },
+        "link": {
+          "href": {
+            "value": "#",
+            "elementType": "link",
+            "isShown": false
+          },
+          "label": {
+            "value": "Watch the talk",
+            "elementType": "link",
+            "relativePath": "./div/div[2]/div[4]/div/div[2]/a"
+          },
+          "displayUrl": {
+            "value": "youtube.com",
+            "elementType": "text",
+            "relativePath": "./div/div[2]/div[4]/div/div[2]/p"
+          }
+        }
+      },
+      {
+        "title": {
+          "value": "Meet the top 10 developers to watch in 2021",
+          "elementType": "text",
+          "relativePath": "./div/div[2]/div[5]/div/h3"
+        },
+        "category": {
+          "value": "Article",
+          "elementType": "link",
+          "relativePath": "./div/div[2]/div[5]/div/div[2]/a"
+        },
+        "icon": {
+          "value": {
+            "viewBox": "0 0 16 16"
+          },
+          "relativePath": "./div/div[2]/div[5]/div/div[1]/svg",
+          "elementType": "icon"
+        },
+        "link": {
+          "href": {
+            "value": "#",
+            "elementType": "link",
+            "isShown": false
+          },
+          "label": {
+            "value": "Read the article",
+            "elementType": "text",
+            "relativePath": "./div/div[2]/div[3]/div/div[2]"
+          },
+          "displayUrl": {
+            "value": "hackernews.com",
+            "elementType": "text",
+            "relativePath": "./div/div[2]/div[5]/div/div[2]/p"
+          }
+        }
+      },
+      {
+        "title": {
+          "value": "Flow State for Software Engineers – Cultivate flow with the people who build software",
+          "elementType": "text",
+          "relativePath": "./div/div[2]/div[6]/div/h3"
+        },
+        "category": {
+          "value": "Podcast",
+          "elementType": "link",
+          "relativePath": "./div/div[2]/div[6]/div/div[2]/a"
+        },
+        "icon": {
+          "value": {
+            "viewBox": "0 0 16 16"
+          },
+          "relativePath": "./div/div[2]/div[6]/div/div[1]/svg",
+          "elementType": "icon"
+        },
+        "link": {
+          "href": {
+            "value": "#",
+            "elementType": "link",
+            "isShown": false
+          },
+          "label": {
+            "value": "Listen to podcast",
+            "elementType": "text",
+            "relativePath": "./div/div[2]/div[1]/div/div[2]"
+          },
+          "displayUrl": {
+            "value": "youtube.com",
+            "elementType": "text",
+            "relativePath": "./div/div[2]/div[6]/div/div[2]/p"
+          }
+        }
+      },
+      {
+        "title": {
+          "value": "Building a Sense of Community Around Your Business - with Duncan Jones Junior",
+          "elementType": "text",
+          "relativePath": "./div/div[2]/div[7]/div/h3"
+        },
+        "category": {
+          "value": "Podcast",
+          "elementType": "text",
+          "relativePath": "./div/div[2]/div[2]/div/div[2]"
+        },
+        "icon": {
+          "value": "podcast",
+          "elementType": "text",
+          "relativePath": "./div/div[2]/div[6]/div/div[2]"
+        },
+        "link": {
+          "href": {
+            "value": "#",
+            "elementType": "link",
+            "isShown": false
+          },
+          "label": {
+            "value": "Listen to podcast",
+            "elementType": "text",
+            "relativePath": "./div/div[2]/div[7]/div/div[2]"
+          },
+          "displayUrl": {
+            "value": "spotify.com",
+            "elementType": "text",
+            "relativePath": "./div/div[2]/div[7]/div/div[2]/p"
+          }
+        }
+      },
+      {
+        "title": {
+          "value": "How much money can a web developer with 100k subscribers on Youtube make with AdSense, affiliates and sponsors?",
+          "elementType": "text",
+          "relativePath": "./div/div[2]/div[8]/div/h3"
+        },
+        "category": {
+          "value": "Press",
+          "elementType": "text",
+          "relativePath": "./div/div[2]/div[8]/div/div[1]"
+        },
+        "icon": {
+          "value": "article",
+          "elementType": "text",
+          "relativePath": "./div/div[2]/div[5]/div/div[2]"
+        },
+        "link": {
+          "href": {
+            "value": "#",
+            "elementType": "link",
+            "isShown": false
+          },
+          "label": {
+            "value": "Read the article",
+            "elementType": "text",
+            "relativePath": "./div/div[2]/div[8]/div/div[2]"
+          },
+          "displayUrl": {
+            "value": "businessinsider.com",
+            "elementType": "text",
+            "relativePath": "./div/div[2]/div[8]/div/div[2]/p"
+          }
+        }
+      },
+      {
+        "title": {
+          "value": "Extending and Embedding Rich Media in the Rails Universe with the Trix Editor",
+          "elementType": "text",
+          "relativePath": "./div/div[2]/div[9]/div/h3"
+        },
+        "category": {
+          "value": "RailsConf 2021",
+          "elementType": "text",
+          "relativePath": "./div/div[2]/div[9]/div/div[1]"
+        },
+        "icon": {
+          "value": {
+            "viewBox": "0 0 16 16"
+          },
+          "elementType": "icon",
+          "relativePath": "./div/div[2]/div[9]/div/div[1]/svg"
+        },
+        "link": {
+          "href": {
+            "value": "#",
+            "elementType": "link",
+            "isShown": false
+          },
+          "label": {
+            "value": "Watch the talk",
+            "elementType": "link",
+            "relativePath": "./div/div[2]/div[9]/div/div[2]/a"
+          },
+          "displayUrl": {
+            "value": "youtube.com",
+            "elementType": "text",
+            "relativePath": "./div/div[2]/div[9]/div/div[2]/p"
+          }
+        }
+      }
+    ]
+  },
+  "styling": {
+    "collectionViews": {},
+    "collectionSelections": {
+      "items": {
+        "ids": [
+          "the-future-of-software-enginee",
+          "building-a-sense-of-community-",
+          "14-things-you-should-know-befo",
+          "why-service-objects-aren-t-evi",
+          "meet-the-top-10-developers-to-",
+          "flow-state-for-software-engine",
+          "building-a-sense-of-community-",
+          "how-much-money-can-a-web-devel",
+          "extending-and-embedding-rich-m"
+        ]
+      }
+    },
+    "collectionFilters": {}
+  },
+  "settings": {
+    "marker": "<div data-elid=\"press_section\" data-elid-type=\"section\">",
+    "fieldSources": {
+      "content": {
+        "type": "inline",
+        "location": "frontmatter"
+      }
+    },
+    "sort_order": 6
+  }
+}

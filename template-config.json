@@ -1,0 +1,316 @@
+{
+  "schemaVersion": 3,
+  "siteName": "jane-astro",
+  "siteLabel": "jane-astro",
+  "content": {
+    "componentData": {
+      "static": [
+        {
+          "path": "/",
+          "title": "Home",
+          "dataModule": "/jane-astro-data/page§index§testimonials_section.json",
+          "encodedRoute": "index"
+        },
+        {
+          "path": "/about",
+          "title": "About",
+          "dataModule": "/jane-astro-data/page§about§press_section.json",
+          "encodedRoute": "about"
+        },
+        {
+          "path": "/contact",
+          "title": "Contact",
+          "dataModule": "/jane-astro-data/page§contact§contact_section.json",
+          "encodedRoute": "contact"
+        }
+      ],
+      "contentCollections": {
+        "blog": {
+          "source": "src/content/blog/",
+          "routePattern": "/blog/[slug]",
+          "listRoute": "/blog",
+          "notes": "Blog posts from MDX files. Content managed via Astro content collections, not tagger scaffolds."
+        },
+        "work": {
+          "source": "src/content/work/",
+          "routePattern": "/work/[slug]",
+          "listRoute": "/work",
+          "notes": "Case studies from MDX files. Content managed via Astro content collections, not tagger scaffolds."
+        }
+      }
+    }
+  },
+  "globals": {
+    "componentData": {
+      "module": "/jane-astro-data/globalComponents.json",
+      "export": "default"
+    }
+  },
+  "runtimeRules": {
+    "failClosed": true,
+    "formatOnWrite": true
+  },
+  "collectionDefaults": {
+    "items": {
+      "entrySource": {
+        "location": "$component",
+        "path": "items",
+        "sourceType": "inline",
+        "itemInsertMode": "append"
+      },
+      "defaultAccess": "read-only",
+      "instructions": "Items collection. Total fields: title, category, icon, link. Rendered: title, category."
+    },
+    "links": {
+      "entrySource": {
+        "location": "$component",
+        "path": "links",
+        "sourceType": "config-module",
+        "itemInsertMode": "append"
+      },
+      "defaultAccess": "read-only",
+      "instructions": "Navigation links collection."
+    },
+    "pages": {
+      "entrySource": {
+        "location": "$component",
+        "path": "pages",
+        "sourceType": "config-module",
+        "itemInsertMode": "append"
+      },
+      "defaultAccess": "read-only",
+      "instructions": "Pages navigation collection."
+    },
+    "testimonials": {
+      "entrySource": {
+        "location": "$component",
+        "path": "testimonials",
+        "sourceType": "inline",
+        "itemInsertMode": "append"
+      },
+      "defaultAccess": "read-only",
+      "instructions": "Testimonials collection."
+    },
+    "companies": {
+      "entrySource": {
+        "location": "$component",
+        "path": "companies",
+        "sourceType": "inline",
+        "itemInsertMode": "append"
+      },
+      "defaultAccess": "read-only",
+      "instructions": "Companies/logos collection."
+    },
+    "features": {
+      "entrySource": {
+        "location": "$component",
+        "path": "features",
+        "sourceType": "inline",
+        "itemInsertMode": "append"
+      },
+      "defaultAccess": "read-only",
+      "instructions": "Features collection (hardcoded in component frontmatter)."
+    },
+    "awards": {
+      "entrySource": {
+        "location": "$component",
+        "path": "awards",
+        "sourceType": "inline",
+        "itemInsertMode": "append"
+      },
+      "defaultAccess": "read-only",
+      "instructions": "Awards/logos collection (hardcoded SVG imports in component)."
+    }
+  },
+  "collectionOverrides": {},
+  "collectionStatus": {
+    "defined": true,
+    "reason": "Initial test configuration for Press component",
+    "reviewedAt": "2026-01-25"
+  },
+  "mediaDefaults": {
+    "image": {
+      "type": "image",
+      "directory": "src/assets/images",
+      "alias": "~/assets/images",
+      "name": {
+        "strategy": "${componentSlug}-${field}-${timestamp}",
+        "separator": "-",
+        "timestampFormat": "yyyyMMdd-HHmmss",
+        "maxLength": 80
+      }
+    },
+    "svg": {
+      "type": "svg",
+      "contentType": "icon",
+      "directory": "src/assets/icons",
+      "alias": "~/assets/icons",
+      "name": {
+        "strategy": "${componentSlug}-${field}",
+        "separator": "-",
+        "maxLength": 60
+      }
+    }
+  },
+  "mediaVariables": {
+    "hero_section.heroPortrait": {
+      "type": "image",
+      "name": {
+        "strategy": "hero-portrait-${timestamp}",
+        "separator": "-"
+      },
+      "directory": "src/images",
+      "steps": ["import", "replace"],
+      "label": "Hero Portrait"
+    },
+    "hero_section.bgGradient": {
+      "type": "svg",
+      "name": {
+        "strategy": "hero-gradient-${timestamp}",
+        "separator": "-"
+      },
+      "directory": "src/images",
+      "steps": ["import", "replace"],
+      "label": "Hero Background Gradient"
+    },
+    "about_hero_section.heroImage": {
+      "type": "image",
+      "name": {
+        "strategy": "about-hero-${timestamp}",
+        "separator": "-"
+      },
+      "directory": "src/images",
+      "steps": ["import", "replace"],
+      "label": "About Hero Image"
+    },
+    "workstation_section.workstationImage1": {
+      "type": "image",
+      "name": {
+        "strategy": "workstation-1-${timestamp}",
+        "separator": "-"
+      },
+      "directory": "src/images",
+      "steps": ["import", "replace"],
+      "label": "Workstation Image 1"
+    },
+    "workstation_section.workstationImage2": {
+      "type": "image",
+      "name": {
+        "strategy": "workstation-2-${timestamp}",
+        "separator": "-"
+      },
+      "directory": "src/images",
+      "steps": ["import", "replace"],
+      "label": "Workstation Image 2"
+    },
+    "stack2_section.image": {
+      "type": "image",
+      "name": {
+        "strategy": "stack-portrait-${timestamp}",
+        "separator": "-"
+      },
+      "directory": "src/images",
+      "steps": ["import", "replace"],
+      "label": "Stack Portrait Image"
+    },
+    "global_header.logo": {
+      "type": "image",
+      "name": {
+        "strategy": "logo-${timestamp}",
+        "separator": "-"
+      },
+      "directory": "src/images",
+      "steps": ["import", "replace"],
+      "label": "Site Logo"
+    },
+    "global_footer.newsletterBg": {
+      "type": "image",
+      "name": {
+        "strategy": "newsletter-bg-${timestamp}",
+        "separator": "-"
+      },
+      "directory": "src/images",
+      "steps": ["import", "replace"],
+      "label": "Newsletter Background"
+    },
+    "testimonials_section.testimonials.*.avatar": {
+      "type": "image",
+      "name": {
+        "strategy": "testimonial-avatar-${index}-${timestamp}",
+        "separator": "-"
+      },
+      "directory": "src/images/avatars",
+      "steps": ["import", "replace"],
+      "label": "Testimonial Avatar"
+    },
+    "work_experience_section.companies.*.logo": {
+      "type": "image",
+      "name": {
+        "strategy": "company-logo-${index}-${timestamp}",
+        "separator": "-"
+      },
+      "directory": "src/images/logos/icons",
+      "steps": ["import", "replace"],
+      "label": "Company Logo"
+    },
+    "press_section.companies.*.logo": {
+      "type": "svg",
+      "name": {
+        "strategy": "press-logo-${index}-${timestamp}",
+        "separator": "-"
+      },
+      "directory": "src/images/logos",
+      "steps": ["import", "replace"],
+      "label": "Press Company Logo"
+    },
+    "awards_section.awards.*": {
+      "type": "svg",
+      "name": {
+        "strategy": "award-logo-${index}-${timestamp}",
+        "separator": "-"
+      },
+      "directory": "src/images/logos/awards",
+      "steps": ["import", "replace"],
+      "label": "Award Logo"
+    },
+    "contact_section.image": {
+      "type": "image",
+      "name": {
+        "strategy": "contact-image-${timestamp}",
+        "separator": "-"
+      },
+      "directory": "src/images",
+      "steps": ["import", "replace"],
+      "label": "Contact Page Image"
+    }
+  },
+  "mediaGuides": {
+    "hero_section.heroPortrait": {
+      "type": "image",
+      "directory": "src/images",
+      "recommendedSize": "800x1000",
+      "aspectRatio": "4:5",
+      "notes": "Portrait photo for hero section, will be cropped to fit"
+    },
+    "about_hero_section.heroImage": {
+      "type": "image",
+      "directory": "src/images",
+      "recommendedSize": "600x900",
+      "aspectRatio": "2:3",
+      "notes": "Full-height portrait image for about page hero"
+    },
+    "testimonials_section.testimonials.*.avatar": {
+      "type": "image",
+      "directory": "src/images/avatars",
+      "recommendedSize": "200x200",
+      "aspectRatio": "1:1",
+      "notes": "Square avatar images for testimonial authors"
+    },
+    "global_header.logo": {
+      "type": "image",
+      "directory": "src/images",
+      "recommendedSize": "200x40",
+      "notes": "Site logo, should be transparent PNG or SVG"
+    }
+  }
+}

@@ -1,0 +1,258 @@
+{
+  "meta": {
+    "file": "src/pages/about.astro",
+    "slug": "awards_section",
+    "component": "awards_section",
+    "schemaVersion": 3,
+    "dataType": "inline",
+    "collections": {
+      "awards": {
+        "path": "content.awards",
+        "itemRole": "inline",
+        "keyField": "name",
+        "iterableSelector": "[data-elid='awards_section'] + * div.grid > div",
+        "fields": {
+          "logo": {
+            "path": "logo.value"
+          }
+        },
+        "source": {
+          "type": "inline",
+          "module": "src/components/Awards.astro"
+        },
+        "_expectedCount": 12,
+        "_hardcoded": true,
+        "_hardcodedSource": "src/components/Awards.astro",
+        "libraryKey": "content.awards"
+      }
+    }
+  },
+  "content": {
+    "heading": {
+      "value": "My awards and acknowledgements",
+      "relativePath": "./div",
+      "elementType": "text"
+    },
+    "description": {
+      "value": "Recognitions are like tattoos, you only show them off to people you want to impress.",
+      "relativePath": "./div/div[1]",
+      "elementType": "text"
+    },
+    "awards": [
+      {
+        "name": {
+          "value": "Awwwards",
+          "isShown": false
+        },
+        "logo": {
+          "value": {
+            "src": "@images/logos/awards/awwwards.svg",
+            "alt": ""
+          },
+          "isShown": false,
+          "visibilityState": "hidden:not_rendered",
+          "note": "Content in data source but not rendered in current DOM"
+        }
+      },
+      {
+        "name": {
+          "value": "CSS Design Awards",
+          "isShown": false
+        },
+        "logo": {
+          "value": {
+            "src": "@images/logos/awards/css-design-awards.svg",
+            "alt": ""
+          },
+          "isShown": false,
+          "visibilityState": "hidden:not_rendered",
+          "note": "Content in data source but not rendered in current DOM"
+        }
+      },
+      {
+        "name": {
+          "value": "Adobe",
+          "isShown": false
+        },
+        "logo": {
+          "value": {
+            "src": "@images/logos/awards/adobe.svg",
+            "alt": ""
+          },
+          "isShown": false,
+          "visibilityState": "hidden:not_rendered",
+          "note": "Content in data source but not rendered in current DOM"
+        }
+      },
+      {
+        "name": {
+          "value": "Behance",
+          "isShown": false
+        },
+        "logo": {
+          "value": {
+            "src": "@images/logos/awards/behance.svg",
+            "alt": ""
+          },
+          "isShown": false,
+          "visibilityState": "hidden:not_rendered",
+          "note": "Content in data source but not rendered in current DOM"
+        }
+      },
+      {
+        "name": {
+          "value": "Dribbble",
+          "isShown": false
+        },
+        "logo": {
+          "value": {
+            "src": "@images/logos/awards/dribbble.svg",
+            "alt": ""
+          },
+          "isShown": false,
+          "visibilityState": "hidden:not_rendered",
+          "note": "Content in data source but not rendered in current DOM"
+        }
+      },
+      {
+        "name": {
+          "value": "Logo Ipsum 1",
+          "isShown": false
+        },
+        "logo": {
+          "value": {
+            "src": "@images/logos/awards/logoipsum-1.svg",
+            "alt": ""
+          },
+          "isShown": false,
+          "visibilityState": "hidden:not_rendered",
+          "note": "Content in data source but not rendered in current DOM"
+        }
+      },
+      {
+        "name": {
+          "value": "Logo Ipsum 2",
+          "isShown": false
+        },
+        "logo": {
+          "value": {
+            "src": "@images/logos/awards/logoipsum-2.svg",
+            "alt": ""
+          },
+          "isShown": false,
+          "visibilityState": "hidden:not_rendered",
+          "note": "Content in data source but not rendered in current DOM"
+        }
+      },
+      {
+        "name": {
+          "value": "Logo Ipsum 3",
+          "isShown": false
+        },
+        "logo": {
+          "value": {
+            "src": "@images/logos/awards/logoipsum-3.svg",
+            "alt": ""
+          },
+          "isShown": false,
+          "visibilityState": "hidden:not_rendered",
+          "note": "Content in data source but not rendered in current DOM"
+        }
+      },
+      {
+        "name": {
+          "value": "Logo Ipsum 4",
+          "isShown": false
+        },
+        "logo": {
+          "value": {
+            "src": "@images/logos/awards/logoipsum-4.svg",
+            "alt": ""
+          },
+          "isShown": false,
+          "visibilityState": "hidden:not_rendered",
+          "note": "Content in data source but not rendered in current DOM"
+        }
+      },
+      {
+        "name": {
+          "value": "Logo Ipsum 5",
+          "isShown": false
+        },
+        "logo": {
+          "value": {
+            "src": "@images/logos/awards/logoipsum-5.svg",
+            "alt": ""
+          },
+          "isShown": false,
+          "visibilityState": "hidden:not_rendered",
+          "note": "Content in data source but not rendered in current DOM"
+        }
+      },
+      {
+        "name": {
+          "value": "Logo Ipsum 6",
+          "isShown": false
+        },
+        "logo": {
+          "value": {
+            "src": "@images/logos/awards/logoipsum-6.svg",
+            "alt": ""
+          },
+          "isShown": false,
+          "visibilityState": "hidden:not_rendered",
+          "note": "Content in data source but not rendered in current DOM"
+        }
+      },
+      {
+        "name": {
+          "value": "Logo Ipsum 7",
+          "isShown": false
+        },
+        "logo": {
+          "value": {
+            "src": "@images/logos/awards/logoipsum-7.svg",
+            "alt": ""
+          },
+          "isShown": false,
+          "visibilityState": "hidden:not_rendered",
+          "note": "Content in data source but not rendered in current DOM"
+        }
+      }
+    ]
+  },
+  "styling": {
+    "collectionViews": {},
+    "collectionSelections": {
+      "awards": {
+        "ids": [
+          "awwwards",
+          "css-design-awards",
+          "adobe",
+          "behance",
+          "dribbble",
+          "logo-ipsum-1",
+          "logo-ipsum-2",
+          "logo-ipsum-3",
+          "logo-ipsum-4",
+          "logo-ipsum-5",
+          "logo-ipsum-6",
+          "logo-ipsum-7"
+        ]
+      }
+    },
+    "collectionFilters": {}
+  },
+  "settings": {
+    "marker": "<div data-elid=\"awards_section\" data-elid-type=\"section\">",
+    "fieldSources": {
+      "content": {
+        "type": "inline",
+        "module": "src/pages/about.astro"
+      }
+    },
+    "sort_order": 5,
+    "_hardcoded": true,
+    "_hardcodedSource": "src/components/Awards.astro"
+  }
+}

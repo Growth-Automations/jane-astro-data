@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "file": "src/pages/index.astro",
+    "slug": "hero_section",
+    "component": "hero_section",
+    "schemaVersion": 3,
+    "dataType": "inline",
+    "collections": {}
+  },
+  "content": {
+    "heading": {
+      "value": "Helping businesses turn their ideas into reality",
+      "relativePath": "./div/div[1]",
+      "elementType": "text"
+    },
+    "description": {
+      "value": "I'm a passionate developer, entrepreneur, and general technology enthusiast living in San Francisco. I've worked with hundreds of startups to help them develop their ideas into profitable businesses.",
+      "relativePath": "./div",
+      "elementType": "text"
+    },
+    "ctaText": {
+      "value": "Book a call with me",
+      "isShown": false,
+      "visibilityState": "hidden:not_rendered",
+      "note": "Content in data source but not rendered in current DOM"
+    },
+    "handwrittenText": {
+      "value": "Hi, I'm Jane!",
+      "relativePath": "./div/div[2]/div/div/div[1]/span",
+      "elementType": "text"
+    },
+    "heroPortrait": {
+      "value": {
+        "src": "@images/hero-portrait.jpg",
+        "alt": ""
+      },
+      "isShown": false,
+      "visibilityState": "hidden:not_rendered",
+      "note": "Content in data source but not rendered in current DOM"
+    },
+    "bgGradient": {
+      "value": {
+        "src": "@images/home-hero-gradient.svg",
+        "alt": ""
+      },
+      "isShown": false
+    },
+    "figmaBadge": {
+      "value": "4 years of experience",
+      "relativePath": "./div/div[2]",
+      "elementType": "text"
+    },
+    "sketchBadge": {
+      "value": "5 years of experience",
+      "relativePath": "./div/div[2]/div",
+      "elementType": "text"
+    },
+    "tailwindBadge": {
+      "value": "3 years of experience",
+      "relativePath": "./div/div[2]/div/div/div[4]/span",
+      "elementType": "text"
+    }
+  },
+  "styling": {
+    "collectionViews": {},
+    "collectionSelections": {},
+    "collectionFilters": {}
+  },
+  "settings": {
+    "marker": "<div data-elid=\"hero_section\" data-elid-type=\"section\">",
+    "fieldSources": {
+      "content": {
+        "type": "inline",
+        "module": "src/pages/index.astro"
+      }
+    },
+    "sort_order": 1,
+    "_hardcoded": true,
+    "_hardcodedSource": "src/components/Hero.astro"
+  }
+}

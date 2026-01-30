@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "file": "src/pages/about.astro",
+    "slug": "workstation_section",
+    "component": "workstation_section",
+    "schemaVersion": 3,
+    "dataType": "inline",
+    "collections": {}
+  },
+  "content": {
+    "heading": {
+      "value": "A tour of my gadgets and workstation",
+      "relativePath": "./div",
+      "elementType": "text"
+    },
+    "description": {
+      "value": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Instant extraction mazagran milk instant milk foam café iced aftertaste iced brewed.",
+      "relativePath": "./div/div",
+      "elementType": "text"
+    },
+    "ctaText": {
+      "value": "Follow me on Twitter",
+      "relativePath": "./div/div/div[1]",
+      "elementType": "text"
+    },
+    "workstationImage1": {
+      "value": {
+        "src": "@images/workstation-01.jpg",
+        "alt": "Workstation setup"
+      },
+      "isShown": false,
+      "visibilityState": "hidden:not_rendered",
+      "note": "Content in data source but not rendered in current DOM"
+    },
+    "workstationImage2": {
+      "value": {
+        "src": "@images/workstation-02.jpg",
+        "alt": "Keyboard and mouse"
+      },
+      "isShown": false,
+      "visibilityState": "hidden:not_rendered",
+      "note": "Content in data source but not rendered in current DOM"
+    }
+  },
+  "styling": {
+    "collectionViews": {},
+    "collectionSelections": {},
+    "collectionFilters": {}
+  },
+  "settings": {
+    "marker": "<div data-elid=\"workstation_section\" data-elid-type=\"section\">",
+    "fieldSources": {
+      "content": {
+        "type": "inline",
+        "module": "src/pages/about.astro"
+      }
+    },
+    "sort_order": 3,
+    "_hardcoded": true,
+    "_hardcodedSource": "src/components/Workstation.astro"
+  }
+}

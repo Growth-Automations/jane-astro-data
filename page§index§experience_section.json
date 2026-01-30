@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "file": "src/pages/index.astro",
+    "slug": "experience_section",
+    "component": "experience_section",
+    "schemaVersion": 3,
+    "dataType": "inline",
+    "collections": {
+      "features": {
+        "path": "content.features",
+        "itemRole": "inline",
+        "keyField": "title",
+        "iterableSelector": "[data-elid='experience_section'] + * ul > li",
+        "fields": {
+          "title": {
+            "path": "title.value",
+            "elementType": "text"
+          },
+          "description": {
+            "path": "description.value",
+            "elementType": "text"
+          }
+        },
+        "source": {
+          "type": "inline",
+          "module": "src/components/Experience.astro"
+        },
+        "_expectedCount": 3,
+        "_hardcoded": true,
+        "_hardcodedSource": "src/components/Experience.astro",
+        "libraryKey": "content.features"
+      }
+    }
+  },
+  "content": {
+    "title": {
+      "value": "I'm your all-in-one project solution",
+      "isShown": false,
+      "visibilityState": "hidden:not_rendered",
+      "note": "Content in data source but not rendered in current DOM"
+    },
+    "description": {
+      "value": "Experience the advantage of an all-inclusive project solution, where excellence, speed, and responsiveness converge to ensure the highest quality outcome.",
+      "isShown": false,
+      "visibilityState": "hidden:not_rendered",
+      "note": "Content in data source but not rendered in current DOM"
+    },
+    "features": [
+      {
+        "title": {
+          "value": "Excellence",
+          "relativePath": "./div/div[2]/div[1]/ul/li[1]/div/div/div[2]/h3",
+          "elementType": "text"
+        },
+        "description": {
+          "value": "I take pride in doing things well. All client work is done with the best quality possible.",
+          "relativePath": "./div/div[2]/div[1]/ul/li[1]/div/div/div[2]/p",
+          "elementType": "text"
+        },
+        "icon": {
+          "value": {
+            "viewBox": "0 0 24 24"
+          },
+          "relativePath": "./div/div[2]/div[1]/ul/li[1]/div/div/div[1]/span/svg",
+          "elementType": "icon"
+        }
+      },
+      {
+        "title": {
+          "value": "Speed",
+          "relativePath": "./div/div[2]/div[1]/ul/li[2]/div/div/div[2]/h3",
+          "elementType": "text"
+        },
+        "description": {
+          "value": "I like to work hard and fast. I know how important deadlines are to my clients.",
+          "relativePath": "./div/div[2]/div[1]/ul/li[2]/div/div/div[2]/p",
+          "elementType": "text"
+        },
+        "icon": {
+          "value": {
+            "viewBox": "0 0 24 24"
+          },
+          "relativePath": "./div/div[2]/div[1]/ul/li[2]/div/div/div[1]/span/svg",
+          "elementType": "icon"
+        }
+      },
+      {
+        "title": {
+          "value": "Responsiveness",
+          "relativePath": "./div/div[2]/div[1]/ul/li[3]/div/div/div[2]/h3",
+          "elementType": "text"
+        },
+        "description": {
+          "value": "You can rely on me to be responsive and clear whenever we work together.",
+          "relativePath": "./div/div[2]/div[1]/ul/li[3]/div/div/div[2]/p",
+          "elementType": "text"
+        },
+        "icon": {
+          "value": {
+            "viewBox": "0 0 24 24"
+          },
+          "relativePath": "./div/div[2]/div[1]/ul/li[3]/div/div/div[1]/span/svg",
+          "elementType": "icon"
+        }
+      }
+    ],
+    "yearsLabel": {
+      "value": "Years of experience",
+      "relativePath": "./div/div[2]/div[2]",
+      "elementType": "text"
+    },
+    "yearsCount": {
+      "value": "10",
+      "relativePath": "./div/div[2]/div[2]/div",
+      "elementType": "text"
+    },
+    "projectsLabel": {
+      "value": "Projects completed",
+      "relativePath": "./div/div[2]/div[2]/div/div",
+      "elementType": "text"
+    },
+    "projectsCount": {
+      "value": "150",
+      "relativePath": "./div/div[2]",
+      "elementType": "text"
+    },
+    "image": {
+      "value": {
+        "src": "@images/experience-image.jpg",
+        "alt": ""
+      },
+      "isShown": false,
+      "visibilityState": "hidden:not_rendered",
+      "note": "Content in data source but not rendered in current DOM"
+    }
+  },
+  "styling": {
+    "collectionViews": {},
+    "collectionSelections": {
+      "features": {
+        "ids": [
+          "excellence",
+          "speed",
+          "responsiveness"
+        ]
+      }
+    },
+    "collectionFilters": {}
+  },
+  "settings": {
+    "marker": "<div data-elid=\"experience_section\" data-elid-type=\"section\">",
+    "fieldSources": {
+      "content": {
+        "type": "inline",
+        "module": "src/pages/index.astro"
+      }
+    },
+    "sort_order": 2,
+    "_hardcoded": true,
+    "_hardcodedSource": "src/components/Experience.astro"
+  }
+}

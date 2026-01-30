@@ -1,0 +1,600 @@
+{
+  "meta": {
+    "file": "jane-astro/src/components/Testimonials.astro",
+    "slug": "testimonials_section",
+    "component": "testimonials_section",
+    "schemaVersion": 3,
+    "dataType": "inline",
+    "collections": {
+      "testimonials": {
+        "path": "content.testimonials",
+        "itemRole": "inline",
+        "keyField": "headline",
+        "fields": {
+          "headline": {
+            "path": "headline.value",
+            "elementType": "text"
+          },
+          "content": {
+            "path": "content.value",
+            "elementType": "text"
+          },
+          "author.name": {
+            "path": "author.name.value",
+            "elementType": "text"
+          },
+          "author.role": {
+            "path": "author.role.value",
+            "elementType": "text"
+          },
+          "author.image": {
+            "path": "author.image.value",
+            "elementType": "image"
+          }
+        },
+        "source": {
+          "type": "inline",
+          "location": "frontmatter"
+        },
+        "iterableSelector": "[data-elid='testimonials_section'] + section .swiper-slide",
+        "libraryKey": "content.testimonials"
+      },
+      "companies": {
+        "path": "content.companies",
+        "itemRole": "inline",
+        "keyField": "name",
+        "fields": {
+          "name": {
+            "path": "name.value",
+            "elementType": "text"
+          },
+          "logo": {
+            "path": "logo.value",
+            "elementType": "image"
+          }
+        },
+        "source": {
+          "type": "inline",
+          "location": "frontmatter"
+        },
+        "iterableSelector": "[data-elid='testimonials_section'] + section .grid.grid-cols-2 > div",
+        "libraryKey": "content.companies"
+      }
+    },
+    "_extractedAt": "2026-01-25T15:00:00.000Z",
+    "_source": "manual",
+    "_swiperJs": {
+      "risk": "medium",
+      "config": {
+        "slidesPerView": "auto",
+        "loop": false,
+        "centeredSlides": false,
+        "initialSlide": 0,
+        "spaceBetween": 0,
+        "grabCursor": true,
+        "navigation": true
+      },
+      "notes": "Horizontal testimonial carousel. All 10 slides present in DOM (no lazy loading). Swiper translates container — slides are never display:none. Capture sees all slides in default state.",
+      "captureState": "default (initialSlide: 0, all slides in DOM)",
+      "affectedCollection": "testimonials"
+    },
+    "_hardcoded": true,
+    "_hardcodedSource": "src/components/Testimonials.astro"
+  },
+  "content": {
+    "title": {
+      "value": "Here's what past clients are saying about me",
+      "isShown": false,
+      "visibilityState": "hidden:not_rendered",
+      "note": "Content in data source but not rendered in current DOM"
+    },
+    "subtitle": {
+      "value": "Iced pumpkin ristretto irish trifecta robusta trade froth affogato barista con barista cappuccino filter roast.",
+      "elementType": "text",
+      "relativePath": "./div[1]/div/div[2]"
+    },
+    "companiesHeading": {
+      "value": "These are some companies I have worked with",
+      "elementType": "text",
+      "relativePath": "./div[3]"
+    },
+    "testimonials": [
+      {
+        "headline": {
+          "value": "\"Highly skilled and professional\"",
+          "elementType": "text",
+          "isShown": false
+        },
+        "content": {
+          "value": "And robusta french bar luwak extra caffeine cup filter macchiato skinny shop cream that variety. Caramel black affogato con frappuccino mocha sweet milk and.",
+          "elementType": "text",
+          "relativePath": "./div[2]/div[1]/div/div/div[1]/div/div[1]/p[2]"
+        },
+        "author": {
+          "name": {
+            "value": "Katy Jackson",
+            "elementType": "text",
+            "relativePath": "./div[2]/div[1]/div/div/div[1]/div/div[2]/div/div/p[1]"
+          },
+          "role": {
+            "value": "Designer at Mailgorilla",
+            "elementType": "text",
+            "relativePath": "./div[2]/div[1]/div/div/div[1]/div/div[2]/div/div/p[2]"
+          },
+          "image": {
+            "value": "@images/avatars/avatar-1.png",
+            "elementType": "image",
+            "isShown": false,
+            "visibilityState": "hidden:not_rendered",
+            "note": "Content in data source but not rendered in current DOM"
+          }
+        }
+      },
+      {
+        "headline": {
+          "value": "\"I highly recommend him\"",
+          "elementType": "text",
+          "isShown": false
+        },
+        "content": {
+          "value": "And robusta french bar luwak extra caffeine cup filter macchiato skinny shop cream that variety. Caramel black affogato con frappuccino mocha sweet milk and.",
+          "elementType": "text",
+          "relativePath": "./div[2]/div[1]/div/div/div[2]/div/div[1]/p[2]"
+        },
+        "author": {
+          "name": {
+            "value": "Sean Murphy",
+            "elementType": "text",
+            "relativePath": "./div[2]/div[1]/div/div/div[2]/div/div[2]/div/div/p[1]"
+          },
+          "role": {
+            "value": "Founder of North Agency",
+            "elementType": "text",
+            "relativePath": "./div[2]/div[1]/div/div/div[2]/div/div[2]/div/div/p[2]"
+          },
+          "image": {
+            "value": "@images/avatars/avatar-2.png",
+            "elementType": "image",
+            "isShown": false,
+            "visibilityState": "hidden:not_rendered",
+            "note": "Content in data source but not rendered in current DOM"
+          }
+        }
+      },
+      {
+        "headline": {
+          "value": "\"I'm so lucky I found John!\"",
+          "elementType": "text",
+          "isShown": false
+        },
+        "content": {
+          "value": "And robusta french bar luwak extra caffeine cup filter macchiato skinny shop cream that variety. Caramel black affogato con frappuccino mocha sweet milk and.",
+          "elementType": "text",
+          "relativePath": "./div[2]/div[1]/div/div/div[3]/div/div[1]/p[2]"
+        },
+        "author": {
+          "name": {
+            "value": "Elaine Foster",
+            "elementType": "text",
+            "relativePath": "./div[2]/div[1]/div/div/div[3]/div/div[2]/div/div/p[1]"
+          },
+          "role": {
+            "value": "CEO of Wakatech",
+            "elementType": "text",
+            "relativePath": "./div[2]/div[1]/div/div/div[3]/div/div[2]/div/div/p[2]"
+          },
+          "image": {
+            "value": "@images/avatars/avatar-3.png",
+            "elementType": "image",
+            "isShown": false,
+            "visibilityState": "hidden:not_rendered",
+            "note": "Content in data source but not rendered in current DOM"
+          }
+        }
+      },
+      {
+        "headline": {
+          "value": "\"I'm really impressed with the quality of his work\"",
+          "elementType": "text",
+          "isShown": false
+        },
+        "content": {
+          "value": "And robusta french bar luwak extra caffeine cup filter macchiato skinny shop cream that variety. Caramel black affogato con frappuccino mocha sweet milk and.",
+          "elementType": "text",
+          "relativePath": "./div[2]/div[1]/div/div/div[4]/div/div[1]/p[2]"
+        },
+        "author": {
+          "name": {
+            "value": "Jeff Bick",
+            "elementType": "text",
+            "relativePath": "./div[2]/div[1]/div/div/div[4]/div/div[2]/div/div/p[1]"
+          },
+          "role": {
+            "value": "Developer at Bad Inc.",
+            "elementType": "text",
+            "relativePath": "./div[2]/div[1]/div/div/div[4]/div/div[2]/div/div/p[2]"
+          },
+          "image": {
+            "value": "@images/avatars/avatar-4.png",
+            "elementType": "image",
+            "isShown": false,
+            "visibilityState": "hidden:not_rendered",
+            "note": "Content in data source but not rendered in current DOM"
+          }
+        }
+      },
+      {
+        "headline": {
+          "value": "\"Seriously awesome!\"",
+          "elementType": "text",
+          "isShown": false
+        },
+        "content": {
+          "value": "And robusta french bar luwak extra caffeine cup filter macchiato skinny shop cream that variety. Caramel black affogato con frappuccino mocha sweet milk and.",
+          "elementType": "text",
+          "relativePath": "./div[2]/div[1]/div/div/div[5]/div/div[1]/p[2]"
+        },
+        "author": {
+          "name": {
+            "value": "Jason Cosmo",
+            "elementType": "text",
+            "relativePath": "./div[2]/div[1]/div/div/div[5]/div/div[2]/div/div/p[1]"
+          },
+          "role": {
+            "value": "CEO of Eastern Digital",
+            "elementType": "text",
+            "relativePath": "./div[2]/div[1]/div/div/div[5]/div/div[2]/div/div/p[2]"
+          },
+          "image": {
+            "value": "@images/avatars/avatar-5.png",
+            "elementType": "image",
+            "isShown": false,
+            "visibilityState": "hidden:not_rendered",
+            "note": "Content in data source but not rendered in current DOM"
+          }
+        }
+      },
+      {
+        "headline": {
+          "value": "\"Highly skilled and professional\"",
+          "elementType": "text",
+          "isShown": false
+        },
+        "content": {
+          "value": "And robusta french bar luwak extra caffeine cup filter macchiato skinny shop cream that variety. Caramel black affogato con frappuccino mocha sweet milk and.",
+          "elementType": "text",
+          "relativePath": "./div[2]/div[1]/div/div/div[6]/div/div[1]/p[2]"
+        },
+        "author": {
+          "name": {
+            "value": "Katy Jackson",
+            "elementType": "text",
+            "relativePath": "./div[2]/div[1]/div/div/div[6]/div/div[2]/div/div/p[1]"
+          },
+          "role": {
+            "value": "Designer at Mailgorilla",
+            "elementType": "text",
+            "relativePath": "./div[2]/div[1]/div/div/div[6]/div/div[2]/div/div/p[2]"
+          },
+          "image": {
+            "value": "@images/avatars/avatar-1.png",
+            "elementType": "image",
+            "isShown": false,
+            "visibilityState": "hidden:not_rendered",
+            "note": "Content in data source but not rendered in current DOM"
+          }
+        }
+      },
+      {
+        "headline": {
+          "value": "\"I highly recommend him\"",
+          "elementType": "text",
+          "isShown": false
+        },
+        "content": {
+          "value": "And robusta french bar luwak extra caffeine cup filter macchiato skinny shop cream that variety. Caramel black affogato con frappuccino mocha sweet milk and.",
+          "elementType": "text",
+          "relativePath": "./div[2]/div[1]/div/div/div[7]/div/div[1]/p[2]"
+        },
+        "author": {
+          "name": {
+            "value": "Sean Murphy",
+            "elementType": "text",
+            "relativePath": "./div[2]/div[1]/div/div/div[7]/div/div[2]/div/div/p[1]"
+          },
+          "role": {
+            "value": "Founder of North Agency",
+            "elementType": "text",
+            "relativePath": "./div[2]/div[1]/div/div/div[7]/div/div[2]/div/div/p[2]"
+          },
+          "image": {
+            "value": "@images/avatars/avatar-2.png",
+            "elementType": "image",
+            "isShown": false,
+            "visibilityState": "hidden:not_rendered",
+            "note": "Content in data source but not rendered in current DOM"
+          }
+        }
+      },
+      {
+        "headline": {
+          "value": "\"I'm so lucky I found John!\"",
+          "elementType": "text",
+          "isShown": false
+        },
+        "content": {
+          "value": "And robusta french bar luwak extra caffeine cup filter macchiato skinny shop cream that variety. Caramel black affogato con frappuccino mocha sweet milk and.",
+          "elementType": "text",
+          "relativePath": "./div[2]/div[1]/div/div/div[8]/div/div[1]/p[2]"
+        },
+        "author": {
+          "name": {
+            "value": "Elaine Foster",
+            "elementType": "text",
+            "relativePath": "./div[2]/div[1]/div/div/div[8]/div/div[2]/div/div/p[1]"
+          },
+          "role": {
+            "value": "CEO of Wakatech",
+            "elementType": "text",
+            "relativePath": "./div[2]/div[1]/div/div/div[8]/div/div[2]/div/div/p[2]"
+          },
+          "image": {
+            "value": "@images/avatars/avatar-3.png",
+            "elementType": "image",
+            "isShown": false,
+            "visibilityState": "hidden:not_rendered",
+            "note": "Content in data source but not rendered in current DOM"
+          }
+        }
+      },
+      {
+        "headline": {
+          "value": "\"I'm really impressed with the quality of his work\"",
+          "elementType": "text",
+          "isShown": false
+        },
+        "content": {
+          "value": "And robusta french bar luwak extra caffeine cup filter macchiato skinny shop cream that variety. Caramel black affogato con frappuccino mocha sweet milk and.",
+          "elementType": "text",
+          "relativePath": "./div[2]/div[1]/div/div/div[9]/div/div[1]/p[2]"
+        },
+        "author": {
+          "name": {
+            "value": "Jeff Bick",
+            "elementType": "text",
+            "relativePath": "./div[2]/div[1]/div/div/div[9]/div/div[2]/div/div/p[1]"
+          },
+          "role": {
+            "value": "Developer at Bad Inc.",
+            "elementType": "text",
+            "relativePath": "./div[2]/div[1]/div/div/div[9]/div/div[2]/div/div/p[2]"
+          },
+          "image": {
+            "value": "@images/avatars/avatar-4.png",
+            "elementType": "image",
+            "isShown": false,
+            "visibilityState": "hidden:not_rendered",
+            "note": "Content in data source but not rendered in current DOM"
+          }
+        }
+      },
+      {
+        "headline": {
+          "value": "\"Seriously awesome!\"",
+          "elementType": "text",
+          "isShown": false
+        },
+        "content": {
+          "value": "And robusta french bar luwak extra caffeine cup filter macchiato skinny shop cream that variety. Caramel black affogato con frappuccino mocha sweet milk and.",
+          "elementType": "text",
+          "relativePath": "./div[2]/div[1]/div/div/div[10]/div/div[1]/p[2]"
+        },
+        "author": {
+          "name": {
+            "value": "Jason Cosmo",
+            "elementType": "text",
+            "relativePath": "./div[2]/div[1]/div/div/div[10]/div/div[2]/div/div/p[1]"
+          },
+          "role": {
+            "value": "CEO of Eastern Digital",
+            "elementType": "text",
+            "relativePath": "./div[2]/div[1]/div/div/div[10]/div/div[2]/div/div/p[2]"
+          },
+          "image": {
+            "value": "@images/avatars/avatar-5.png",
+            "elementType": "image",
+            "isShown": false,
+            "visibilityState": "hidden:not_rendered",
+            "note": "Content in data source but not rendered in current DOM"
+          }
+        }
+      }
+    ],
+    "companies": [
+      {
+        "name": {
+          "value": "Zendesk",
+          "elementType": "text",
+          "isShown": false
+        },
+        "logo": {
+          "value": "@images/logos/zendesk.svg",
+          "elementType": "image",
+          "isShown": false,
+          "visibilityState": "hidden:not_rendered",
+          "note": "Content in data source but not rendered in current DOM"
+        }
+      },
+      {
+        "name": {
+          "value": "Intercom",
+          "elementType": "text",
+          "isShown": false
+        },
+        "logo": {
+          "value": "@images/logos/intercom.svg",
+          "elementType": "image",
+          "isShown": false,
+          "visibilityState": "hidden:not_rendered",
+          "note": "Content in data source but not rendered in current DOM"
+        }
+      },
+      {
+        "name": {
+          "value": "Coursera",
+          "elementType": "text",
+          "isShown": false
+        },
+        "logo": {
+          "value": "@images/logos/coursera.svg",
+          "elementType": "image",
+          "isShown": false,
+          "visibilityState": "hidden:not_rendered",
+          "note": "Content in data source but not rendered in current DOM"
+        }
+      },
+      {
+        "name": {
+          "value": "Unbounce",
+          "elementType": "text",
+          "isShown": false
+        },
+        "logo": {
+          "value": "@images/logos/unbounce.svg",
+          "elementType": "image",
+          "isShown": false,
+          "visibilityState": "hidden:not_rendered",
+          "note": "Content in data source but not rendered in current DOM"
+        }
+      },
+      {
+        "name": {
+          "value": "Prismic",
+          "elementType": "text",
+          "isShown": false
+        },
+        "logo": {
+          "value": "@images/logos/prismic.svg",
+          "elementType": "image",
+          "isShown": false,
+          "visibilityState": "hidden:not_rendered",
+          "note": "Content in data source but not rendered in current DOM"
+        }
+      },
+      {
+        "name": {
+          "value": "Codesee",
+          "elementType": "text",
+          "isShown": false
+        },
+        "logo": {
+          "value": "@images/logos/codesee.svg",
+          "elementType": "image",
+          "isShown": false,
+          "visibilityState": "hidden:not_rendered",
+          "note": "Content in data source but not rendered in current DOM"
+        }
+      },
+      {
+        "name": {
+          "value": "Booqable",
+          "elementType": "text",
+          "isShown": false
+        },
+        "logo": {
+          "value": "@images/logos/booqable.svg",
+          "elementType": "image",
+          "isShown": false,
+          "visibilityState": "hidden:not_rendered",
+          "note": "Content in data source but not rendered in current DOM"
+        }
+      },
+      {
+        "name": {
+          "value": "Tapcart",
+          "elementType": "text",
+          "isShown": false
+        },
+        "logo": {
+          "value": "@images/logos/tapcart.svg",
+          "elementType": "image",
+          "isShown": false,
+          "visibilityState": "hidden:not_rendered",
+          "note": "Content in data source but not rendered in current DOM"
+        }
+      },
+      {
+        "name": {
+          "value": "Mailchimp",
+          "elementType": "text",
+          "isShown": false
+        },
+        "logo": {
+          "value": "@images/logos/mailchimp.svg",
+          "elementType": "image",
+          "isShown": false,
+          "visibilityState": "hidden:not_rendered",
+          "note": "Content in data source but not rendered in current DOM"
+        }
+      },
+      {
+        "name": {
+          "value": "Instagram",
+          "elementType": "text",
+          "isShown": false
+        },
+        "logo": {
+          "value": "@images/logos/instagram.svg",
+          "elementType": "image",
+          "isShown": false,
+          "visibilityState": "hidden:not_rendered",
+          "note": "Content in data source but not rendered in current DOM"
+        }
+      }
+    ]
+  },
+  "styling": {
+    "collectionViews": {},
+    "collectionSelections": {
+      "testimonials": {
+        "ids": [
+          "highly-skilled-and-professiona",
+          "i-highly-recommend-him",
+          "i-m-so-lucky-i-found-john",
+          "i-m-really-impressed-with-the-",
+          "seriously-awesome",
+          "highly-skilled-and-professiona",
+          "i-highly-recommend-him",
+          "i-m-so-lucky-i-found-john",
+          "i-m-really-impressed-with-the-",
+          "seriously-awesome"
+        ]
+      },
+      "companies": {
+        "ids": [
+          "zendesk",
+          "intercom",
+          "coursera",
+          "unbounce",
+          "prismic",
+          "codesee",
+          "booqable",
+          "tapcart",
+          "mailchimp",
+          "instagram"
+        ]
+      }
+    },
+    "collectionFilters": {}
+  },
+  "settings": {
+    "marker": "<div data-elid=\"testimonials_section\" data-elid-type=\"section\">",
+    "fieldSources": {
+      "content": {
+        "type": "inline",
+        "location": "frontmatter"
+      }
+    },
+    "sort_order": 5
+  }
+}

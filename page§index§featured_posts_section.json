@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "file": "src/pages/index.astro",
+    "slug": "featured_posts_section",
+    "component": "featured_posts_section",
+    "schemaVersion": 3,
+    "dataType": "inline",
+    "collections": {}
+  },
+  "content": {
+    "heading": {
+      "value": "Thoughts on design, business and indie-hacking",
+      "relativePath": "./div",
+      "elementType": "text"
+    }
+  },
+  "styling": {
+    "collectionViews": {},
+    "collectionSelections": {},
+    "collectionFilters": {}
+  },
+  "settings": {
+    "marker": "<div data-elid=\"featured_posts_section\" data-elid-type=\"section\">",
+    "fieldSources": {
+      "content": {
+        "type": "inline",
+        "module": "src/pages/index.astro"
+      }
+    },
+    "sort_order": 6,
+    "_hardcoded": true,
+    "_hardcodedSource": "src/components/blog/FeaturedPosts.astro",
+    "_note": "Blog posts from content collection (getSortedPosts). Section-level heading only."
+  }
+}

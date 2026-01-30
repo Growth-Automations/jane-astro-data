@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "file": "src/components/Footer.astro",
+    "slug": "global_footer",
+    "component": "global_footer",
+    "schemaVersion": 3,
+    "dataType": "inline",
+    "collections": {},
+    "isGlobal": true
+  },
+  "content": {
+    "src": {
+      "value": "",
+      "_suspectedType": "image",
+      "isShown": false,
+      "visibilityState": "hidden:not_rendered",
+      "note": "Content in data source but not rendered in current DOM"
+    },
+    "alt": {
+      "value": "Home",
+      "visibilityState": "hidden:not_rendered",
+      "note": "Content in data source but not rendered in current DOM",
+      "isShown": false
+    },
+    "class": {
+      "value": "absolute inset-0 h-full w-full object-cover object-right",
+      "isShown": false,
+      "visibilityState": "hidden:config",
+      "note": "Layout/styling configuration value"
+    }
+  },
+  "styling": {
+    "collectionViews": {},
+    "collectionSelections": {},
+    "collectionFilters": {}
+  },
+  "settings": {
+    "marker": "<div data-elid=\"global_footer\" data-elid-type=\"footer\" data-elid-global=\"true\">",
+    "fieldSources": {
+      "content": {
+        "type": "inline",
+        "module": "src/components/Footer.astro"
+      }
+    }
+  }
+}

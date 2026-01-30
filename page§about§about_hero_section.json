@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "file": "src/pages/about.astro",
+    "slug": "about_hero_section",
+    "component": "about_hero_section",
+    "schemaVersion": 3,
+    "dataType": "inline",
+    "collections": {}
+  },
+  "content": {
+    "heading": {
+      "value": "Hi, I'm Jane and I'm a designer & developer",
+      "relativePath": "./div[1]",
+      "elementType": "text"
+    },
+    "description1": {
+      "value": "Pumpkin seasonal rich froth decaffeinated trifecta organic blue panna doppio. Body a whipped lungo variety spice seasonal body press mountain con macchiato. Medium coffee single white to caramelization siphon con siphon id as con go single. So ristretto pumpkin affogato cinnamon breve turkish organic. Lait black kopi dripper spice lait cultivar robusta panna whipped and sit aromatic sugar.",
+      "relativePath": "./div[1]/div",
+      "elementType": "text"
+    },
+    "description2": {
+      "value": "And café frappuccino extraction filter froth sugar siphon coffee pumpkin press milk ristretto et au. Trade instant aged as wings bar seasonal pumpkin barista turkish shot go seasonal robusta. Strong iced lungo frappuccino espresso redeye macchiato aftertaste trade pot. Seasonal turkish mocha wings sit crema blue au and grounds eu cortado café cup. Filter viennese bar seasonal wings siphon as frappuccino go luwak single mazagran.",
+      "relativePath": "./div[1]/div/p[2]",
+      "elementType": "text"
+    },
+    "signature": {
+      "value": "Jane Doe",
+      "relativePath": "./div[1]/div/p[3]",
+      "elementType": "text"
+    },
+    "heroImage": {
+      "value": {
+        "src": "@images/about-hero.png",
+        "alt": ""
+      },
+      "isShown": false,
+      "visibilityState": "hidden:not_rendered",
+      "note": "Content in data source but not rendered in current DOM"
+    },
+    "bgGradient": {
+      "value": {
+        "src": "@images/about-hero-gradient.svg",
+        "alt": ""
+      },
+      "isShown": false
+    }
+  },
+  "styling": {
+    "collectionViews": {},
+    "collectionSelections": {},
+    "collectionFilters": {}
+  },
+  "settings": {
+    "marker": "<div data-elid=\"about_hero_section\" data-elid-type=\"section\">",
+    "fieldSources": {
+      "content": {
+        "type": "inline",
+        "module": "src/pages/about.astro"
+      }
+    },
+    "sort_order": 1,
+    "_hardcoded": true,
+    "_hardcodedSource": "src/components/AboutHero.astro"
+  }
+}

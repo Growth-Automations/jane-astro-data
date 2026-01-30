@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "file": "src/pages/about.astro",
+    "slug": "stack2_section",
+    "component": "stack2_section",
+    "schemaVersion": 3,
+    "dataType": "inline",
+    "collections": {}
+  },
+  "content": {
+    "heading": {
+      "value": "A simple stack that you can always trust",
+      "relativePath": "./div/div/div[1]",
+      "elementType": "text"
+    },
+    "description": {
+      "value": "I've been a software developer for over 13 years, and while my stack has shifted over the years, I kept coming back to the same technologies. The following is the stack that I've developed & honed over the years as a software developer.",
+      "relativePath": "./div/div/div[1]/div",
+      "elementType": "text"
+    },
+    "clientCount": {
+      "value": "55+",
+      "relativePath": "./div/div/div[2]/div",
+      "elementType": "text"
+    },
+    "clientLabel": {
+      "value": "Clients have loved my work",
+      "relativePath": "./div/div/div[2]/div/div[2]",
+      "elementType": "text"
+    },
+    "image": {
+      "value": {
+        "src": "@images/portrait-02.jpg",
+        "alt": "Javascript"
+      },
+      "relativePath": "./div/div/div[1]/div/div/div[1]/div/div[1]/img",
+      "elementType": "png"
+    }
+  },
+  "styling": {
+    "collectionViews": {},
+    "collectionSelections": {},
+    "collectionFilters": {}
+  },
+  "settings": {
+    "marker": "<div data-elid=\"stack2_section\" data-elid-type=\"section\">",
+    "fieldSources": {
+      "content": {
+        "type": "inline",
+        "module": "src/pages/about.astro"
+      }
+    },
+    "sort_order": 4,
+    "_hardcoded": true,
+    "_hardcodedSource": "src/components/Stack2.astro",
+    "_note": "Tech stack items from @config STACK.filter(t => t.experience). Client avatars hardcoded in component."
+  }
+}

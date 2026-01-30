@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 3,
+  "pages": [
+    {
+      "path": "/",
+      "title": "Home",
+      "encodedRoute": "index"
+    },
+    {
+      "path": "/about",
+      "title": "About",
+      "encodedRoute": "about"
+    },
+    {
+      "path": "/contact",
+      "title": "Contact",
+      "encodedRoute": "contact"
+    }
+  ]
+}

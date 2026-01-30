@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "file": "src/pages/index.astro",
+    "slug": "stack_section",
+    "component": "stack_section",
+    "schemaVersion": 3,
+    "dataType": "inline",
+    "collections": {}
+  },
+  "content": {
+    "handwrittenText": {
+      "value": "The tools I use on my day-to-day",
+      "relativePath": "./div[3]/span",
+      "elementType": "text"
+    }
+  },
+  "styling": {
+    "collectionViews": {},
+    "collectionSelections": {},
+    "collectionFilters": {}
+  },
+  "settings": {
+    "marker": "<div data-elid=\"stack_section\" data-elid-type=\"section\">",
+    "fieldSources": {
+      "content": {
+        "type": "inline",
+        "module": "src/pages/index.astro"
+      }
+    },
+    "sort_order": 3,
+    "_hardcoded": true,
+    "_hardcodedSource": "src/components/Stack.astro",
+    "_note": "Stack items come from @config STACK array (13 logo images). Items are visual-only with no editable text."
+  }
+}

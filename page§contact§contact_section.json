@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "file": "src/pages/contact.astro",
+    "slug": "contact_section",
+    "component": "contact_section",
+    "schemaVersion": 3,
+    "dataType": "inline",
+    "collections": {}
+  },
+  "content": {
+    "src": {
+      "value": "",
+      "_suspectedType": "image",
+      "isShown": false,
+      "visibilityState": "hidden:not_rendered",
+      "note": "Content in data source but not rendered in current DOM"
+    },
+    "alt": {
+      "value": "",
+      "isShown": false,
+      "visibilityState": "hidden:not_rendered",
+      "note": "Content in data source but not rendered in current DOM"
+    },
+    "class": {
+      "value": "h-full w-full rounded-3xl object-cover xl:left-16",
+      "isShown": false,
+      "visibilityState": "hidden:config",
+      "note": "Layout/styling configuration value"
+    }
+  },
+  "styling": {
+    "collectionViews": {},
+    "collectionSelections": {},
+    "collectionFilters": {}
+  },
+  "settings": {
+    "marker": "<div data-elid=\"contact_section\" data-elid-type=\"section\">",
+    "fieldSources": {
+      "content": {
+        "type": "inline",
+        "module": "src/pages/contact.astro"
+      }
+    },
+    "sort_order": 1
+  }
+}
