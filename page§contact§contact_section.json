@@ -1,0 +1,187 @@
+{
+  "meta": {
+    "file": "src/pages/contact.astro",
+    "slug": "contact_section",
+    "component": "contact_section",
+    "schemaVersion": 3,
+    "dataType": "inline",
+    "collections": {
+      "contactMethods": {
+        "path": "content.renderedContactMethods",
+        "libraryKey": "content.renderedContactMethods",
+        "itemRole": "inline",
+        "keyField": "title",
+        "source": {
+          "type": "inline",
+          "module": "src/pages/contact.astro",
+          "path": "contactMethods"
+        },
+        "fields": {
+          "title": {
+            "path": "title.value"
+          },
+          "description": {
+            "path": "description.value"
+          },
+          "linkText": {
+            "path": "linkText.value"
+          },
+          "icon": {
+            "path": "icon.value",
+            "type": "dom"
+          }
+        },
+        "saveRules": {
+          "itemInsertMode": "append",
+          "allowedActions": [
+            "itemUpdate",
+            "itemReorder"
+          ],
+          "steps": [
+            "write",
+            "format"
+          ],
+          "instructions": "2 contact method items (title, description, linkText, icon, href) defined in contact.astro frontmatter",
+          "defaultAccess": "read-only"
+        }
+      }
+    }
+  },
+  "content": {
+    "heading": {
+      "value": "How can I help you? Let's get in touch",
+      "relativePath": "./div/div/div[1]/div[2]/h2",
+      "elementType": "text"
+    },
+    "contactImage": {
+      "value": "src/images/contact.jpg",
+      "relativePath": "./div/div/div[1]/div[2]/div[1]/img",
+      "elementType": "image"
+    },
+    "decorativeArrow": {
+      "value": "SVG Icon",
+      "relativePath": "./div/div/div[1]/div[2]/div[2]/svg",
+      "elementType": "image",
+      "_suspectedType": "decorative-svg"
+    },
+    "formTitle": {
+      "value": "Fill our the form below to get started",
+      "relativePath": "./div/div/div[2]/div/h3",
+      "elementType": "text"
+    },
+    "formDescription": {
+      "value": "Turkish cortado mazagran skinny macchiato espresso trade medium aromatic.",
+      "relativePath": "./div/div/div[2]/div/p",
+      "elementType": "text"
+    },
+    "renderedContactMethods": [
+      {
+        "_sourceId": "email-me",
+        "_index": 0,
+        "title": {
+          "value": "Email me",
+          "relativePath": "./div/div/div[1]/div[2]/div[3]/div[1]/div/p[1]",
+          "elementType": "text"
+        },
+        "description": {
+          "value": "I will usually email you back within an hour",
+          "relativePath": "./div/div/div[1]/div[2]/div[3]/div[1]/div/p[2]",
+          "elementType": "text"
+        },
+        "linkText": {
+          "value": "hey@janedoe.com",
+          "relativePath": "./div/div/div[1]/div[2]/div[3]/div[1]/div/a",
+          "elementType": "link"
+        },
+        "icon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div/div[1]/div[2]/div[3]/div[1]/svg",
+          "elementType": "image",
+          "_suspectedType": "contact-icon"
+        },
+        "href": {
+          "value": "mailto:hey@janedoe.com",
+          "relativePath": "./div/div/div[1]/div[2]/div[3]/div[1]/div/a",
+          "elementType": "attribute:href"
+        }
+      },
+      {
+        "_sourceId": "call-me",
+        "_index": 1,
+        "title": {
+          "value": "Call me",
+          "relativePath": "./div/div/div[1]/div[2]/div[3]/div[2]/div/p[1]",
+          "elementType": "text"
+        },
+        "description": {
+          "value": "I'm available weekdays from 9AM to 5PM",
+          "relativePath": "./div/div/div[1]/div[2]/div[3]/div[2]/div/p[2]",
+          "elementType": "text"
+        },
+        "linkText": {
+          "value": "+1 (323) 456-7891",
+          "relativePath": "./div/div/div[1]/div[2]/div[3]/div[2]/div/a",
+          "elementType": "link"
+        },
+        "icon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div/div[1]/div[2]/div[3]/div[2]/svg",
+          "elementType": "image",
+          "_suspectedType": "contact-icon"
+        },
+        "href": {
+          "value": "tel:+13234567891",
+          "relativePath": "./div/div/div[1]/div[2]/div[3]/div[2]/div/a",
+          "elementType": "attribute:href"
+        }
+      }
+    ]
+  },
+  "rendering": {
+    "contactMethods": {
+      "iterableSelector": "[data-elid='contact_section'] + * .grid > div",
+      "fields": {
+        "title": {
+          "selector": "div > p:nth-of-type(1)",
+          "elementType": "text"
+        },
+        "description": {
+          "selector": "div > p:nth-of-type(2)",
+          "elementType": "text"
+        },
+        "linkText": {
+          "selector": "div > a",
+          "elementType": "link"
+        },
+        "icon": {
+          "selector": "svg",
+          "elementType": "image"
+        }
+      }
+    }
+  },
+  "styling": {
+    "collectionViews": {},
+    "collectionSelections": {
+      "contactMethods": {
+        "ids": [
+          "email-me",
+          "call-me"
+        ],
+        "path": "content.renderedContactMethods"
+      }
+    },
+    "collectionFilters": {}
+  },
+  "settings": {
+    "marker": "<div data-elid=\"contact_section\" data-elid-type=\"section\">",
+    "fieldSources": {
+      "content": {
+        "type": "inline",
+        "module": "src/pages/contact.astro"
+      }
+    },
+    "sort_order": 1,
+    "rootLocation": "//html[1]/body[1]/section[1]"
+  }
+}

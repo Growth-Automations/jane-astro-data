@@ -1,0 +1,261 @@
+{
+  "meta": {
+    "file": "src/pages/about.astro",
+    "slug": "tech_stack_section",
+    "component": "tech_stack_section",
+    "schemaVersion": 3,
+    "dataType": "inline",
+    "collections": {
+      "stackItems": {
+        "path": "content.renderedStackItems",
+        "libraryKey": "content.renderedStackItems",
+        "itemRole": "config",
+        "keyField": "name",
+        "source": {
+          "type": "config-module",
+          "module": "src/config.ts",
+          "path": "STACK (filtered by experience)"
+        },
+        "fields": {
+          "name": {
+            "path": "name.value"
+          },
+          "experience": {
+            "path": "experience.value"
+          },
+          "logo": {
+            "path": "logo.value"
+          }
+        },
+        "saveRules": {
+          "itemInsertMode": "append",
+          "allowedActions": [
+            "itemUpdate"
+          ],
+          "steps": [
+            "write",
+            "format"
+          ],
+          "instructions": "6 stack items (name, experience, logo) filtered by experience from config.ts STACK array",
+          "defaultAccess": "read-only"
+        }
+      }
+    }
+  },
+  "content": {
+    "title": {
+      "value": "A simple stack that you can always trust",
+      "relativePath": "./div/div/div[1]/div/h2",
+      "elementType": "text"
+    },
+    "description": {
+      "value": "I've been a software developer for over 13 years, and while my stack has shifted over the years, I kept coming back to the same technologies. The following is the stack that I've developed & honed over the years as a software developer.",
+      "relativePath": "./div/div/div[1]/div/p",
+      "elementType": "text"
+    },
+    "titleUnderline": {
+      "value": "SVG Icon",
+      "relativePath": "./div/div/div[1]/div/h2/span/svg",
+      "elementType": "image",
+      "_suspectedType": "decorative-svg"
+    },
+    "clientsText": {
+      "value": "55+ Clients have loved my work",
+      "relativePath": "./div/div/div[2]/div/div[2]/p",
+      "elementType": "text"
+    },
+    "portraitImage": {
+      "value": "src/images/portrait-02.jpg",
+      "relativePath": "./div/div/div[2]/div/div[1]/img",
+      "elementType": "image"
+    },
+    "clientAvatar1": {
+      "value": "src/images/avatars/avatar-1.png",
+      "relativePath": "./div/div/div[2]/div/div[2]/div/img[1]",
+      "elementType": "image"
+    },
+    "clientAvatar2": {
+      "value": "src/images/avatars/avatar-2.png",
+      "relativePath": "./div/div/div[2]/div/div[2]/div/img[2]",
+      "elementType": "image"
+    },
+    "clientAvatar3": {
+      "value": "src/images/avatars/avatar-3.png",
+      "relativePath": "./div/div/div[2]/div/div[2]/div/img[3]",
+      "elementType": "image"
+    },
+    "clientAvatar4": {
+      "value": "src/images/avatars/avatar-4.png",
+      "relativePath": "./div/div/div[2]/div/div[2]/div/img[4]",
+      "elementType": "image"
+    },
+    "clientAvatar5": {
+      "value": "src/images/avatars/avatar-5.png",
+      "relativePath": "./div/div/div[2]/div/div[2]/div/img[5]",
+      "elementType": "image"
+    },
+    "renderedStackItems": [
+      {
+        "_sourceId": "javascript",
+        "_index": 0,
+        "name": {
+          "value": "Javascript",
+          "relativePath": "./div/div/div[1]/div/div/div[1]/div/div[2]/p[1]",
+          "elementType": "text"
+        },
+        "experience": {
+          "value": "8+ years of experience",
+          "relativePath": "./div/div/div[1]/div/div/div[1]/div/div[2]/p[2]",
+          "elementType": "text"
+        },
+        "logo": {
+          "value": "src/images/logos/icons/javascript.svg",
+          "relativePath": "./div/div/div[1]/div/div/div[1]/div/div[1]/img",
+          "elementType": "image"
+        }
+      },
+      {
+        "_sourceId": "tailwind",
+        "_index": 1,
+        "name": {
+          "value": "Tailwind",
+          "relativePath": "./div/div/div[1]/div/div/div[2]/div/div[2]/p[1]",
+          "elementType": "text"
+        },
+        "experience": {
+          "value": "3 years of experience",
+          "relativePath": "./div/div/div[1]/div/div/div[2]/div/div[2]/p[2]",
+          "elementType": "text"
+        },
+        "logo": {
+          "value": "src/images/logos/icons/tailwind.svg",
+          "relativePath": "./div/div/div[1]/div/div/div[2]/div/div[1]/img",
+          "elementType": "image"
+        }
+      },
+      {
+        "_sourceId": "rails",
+        "_index": 2,
+        "name": {
+          "value": "Rails",
+          "relativePath": "./div/div/div[1]/div/div/div[3]/div/div[2]/p[1]",
+          "elementType": "text"
+        },
+        "experience": {
+          "value": "7+ years of experience",
+          "relativePath": "./div/div/div[1]/div/div/div[3]/div/div[2]/p[2]",
+          "elementType": "text"
+        },
+        "logo": {
+          "value": "src/images/logos/icons/rails.svg",
+          "relativePath": "./div/div/div[1]/div/div/div[3]/div/div[1]/img",
+          "elementType": "image"
+        }
+      },
+      {
+        "_sourceId": "python",
+        "_index": 3,
+        "name": {
+          "value": "Python",
+          "relativePath": "./div/div/div[1]/div/div/div[4]/div/div[2]/p[1]",
+          "elementType": "text"
+        },
+        "experience": {
+          "value": "4 years of experience",
+          "relativePath": "./div/div/div[1]/div/div/div[4]/div/div[2]/p[2]",
+          "elementType": "text"
+        },
+        "logo": {
+          "value": "src/images/logos/icons/python.svg",
+          "relativePath": "./div/div/div[1]/div/div/div[4]/div/div[1]/img",
+          "elementType": "image"
+        }
+      },
+      {
+        "_sourceId": "postgresql",
+        "_index": 4,
+        "name": {
+          "value": "Postgresql",
+          "relativePath": "./div/div/div[1]/div/div/div[5]/div/div[2]/p[1]",
+          "elementType": "text"
+        },
+        "experience": {
+          "value": "6 years of experience",
+          "relativePath": "./div/div/div[1]/div/div/div[5]/div/div[2]/p[2]",
+          "elementType": "text"
+        },
+        "logo": {
+          "value": "src/images/logos/icons/postgresql.svg",
+          "relativePath": "./div/div/div[1]/div/div/div[5]/div/div[1]/img",
+          "elementType": "image"
+        }
+      },
+      {
+        "_sourceId": "ruby",
+        "_index": 5,
+        "name": {
+          "value": "Ruby",
+          "relativePath": "./div/div/div[1]/div/div/div[6]/div/div[2]/p[1]",
+          "elementType": "text"
+        },
+        "experience": {
+          "value": "9 years of experience",
+          "relativePath": "./div/div/div[1]/div/div/div[6]/div/div[2]/p[2]",
+          "elementType": "text"
+        },
+        "logo": {
+          "value": "src/images/logos/icons/ruby.svg",
+          "relativePath": "./div/div/div[1]/div/div/div[6]/div/div[1]/img",
+          "elementType": "image"
+        }
+      }
+    ]
+  },
+  "rendering": {
+    "stackItems": {
+      "iterableSelector": "[data-elid='tech_stack_section'] + * .grid > div",
+      "fields": {
+        "name": {
+          "selector": "div:nth-of-type(2) > p:nth-of-type(1)",
+          "elementType": "text"
+        },
+        "experience": {
+          "selector": "div:nth-of-type(2) > p:nth-of-type(2)",
+          "elementType": "text"
+        },
+        "logo": {
+          "selector": "div:nth-of-type(1) > img",
+          "elementType": "image"
+        }
+      }
+    }
+  },
+  "styling": {
+    "collectionViews": {},
+    "collectionSelections": {
+      "stackItems": {
+        "ids": [
+          "javascript",
+          "tailwind",
+          "rails",
+          "python",
+          "postgresql",
+          "ruby"
+        ],
+        "path": "content.renderedStackItems"
+      }
+    },
+    "collectionFilters": {}
+  },
+  "settings": {
+    "marker": "<div data-elid=\"tech_stack_section\" data-elid-type=\"section\">",
+    "fieldSources": {
+      "content": {
+        "type": "config-module",
+        "module": "src/config.ts"
+      }
+    },
+    "sort_order": 4,
+    "rootLocation": "//html[1]/body[1]/section[4]"
+  }
+}

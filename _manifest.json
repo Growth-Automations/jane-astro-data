@@ -1,0 +1,134 @@
+{
+  "version": "3.0",
+  "siteName": "jane-astro",
+  "lastGenerated": "2026-02-05T22:45:28.233Z",
+  "pages": {
+    "/about": {
+      "route": "/about",
+      "encodedRoute": "about",
+      "components": [
+        {
+          "file": "page§about§about_hero_section.json",
+          "slug": "about_hero_section",
+          "schemaVersion": 3,
+          "lastModified": "2026-02-05T21:19:18.590Z",
+          "hash": "d5485ef7a48854d34536b3bb879dac347d04dce14668d7363078872f5b0a1ae3"
+        },
+        {
+          "file": "page§about§awards_section.json",
+          "slug": "awards_section",
+          "schemaVersion": 3,
+          "lastModified": "2026-02-05T21:20:22.593Z",
+          "hash": "2e863e7d43a976e82f89555597772109a9d7af62c45ccc4d6c404113b78a3d10"
+        },
+        {
+          "file": "page§about§press_section.json",
+          "slug": "press_section",
+          "schemaVersion": 3,
+          "lastModified": "2026-02-05T21:40:12.354Z",
+          "hash": "76b2983c0bf10724fbcb029eac419670844d847c3619beb9d4ca13d325a8b6f7"
+        },
+        {
+          "file": "page§about§tech_stack_section.json",
+          "slug": "tech_stack_section",
+          "schemaVersion": 3,
+          "lastModified": "2026-02-05T21:20:52.195Z",
+          "hash": "d772cc98ba252a2af14b283bacb03c55e43b98dc610040a8ab5520102558d7c4"
+        },
+        {
+          "file": "page§about§work_experience_section.json",
+          "slug": "work_experience_section",
+          "schemaVersion": 3,
+          "lastModified": "2026-02-05T21:39:15.404Z",
+          "hash": "adb9ffc0801075371ead70be526ee065123e5f484fa416d464baf8d311eb448c"
+        },
+        {
+          "file": "page§about§workstation_section.json",
+          "slug": "workstation_section",
+          "schemaVersion": 3,
+          "lastModified": "2026-02-05T21:20:08.694Z",
+          "hash": "6e7219ac471ed6e761d01a2351de4c007d13c7a4b9e3b2a3d696e6dfaf24ae99"
+        }
+      ]
+    },
+    "/contact": {
+      "route": "/contact",
+      "encodedRoute": "contact",
+      "components": [
+        {
+          "file": "page§contact§contact_section.json",
+          "slug": "contact_section",
+          "schemaVersion": 3,
+          "lastModified": "2026-02-05T22:41:18.974Z",
+          "hash": "172f3ce48a2e741e33f00637e04b9b931b7e8c403539d0e7af22780f030c4373"
+        }
+      ]
+    },
+    "/": {
+      "route": "/",
+      "encodedRoute": "index",
+      "components": [
+        {
+          "file": "page§index§experience_section.json",
+          "slug": "experience_section",
+          "schemaVersion": 3,
+          "lastModified": "2026-02-05T21:39:37.054Z",
+          "hash": "7efe096d86b353999041cf8e9e9b9c2cf28c3e123bb258cf01d8c1d47d4f8c54"
+        },
+        {
+          "file": "page§index§featured_posts_section.json",
+          "slug": "featured_posts_section",
+          "schemaVersion": 3,
+          "lastModified": "2026-02-05T21:18:42.406Z",
+          "hash": "67b33dbba56c2b464cf048c22d72eb36ba4c3829f4145f200832e698194b0937"
+        },
+        {
+          "file": "page§index§featured_work_section.json",
+          "slug": "featured_work_section",
+          "schemaVersion": 3,
+          "lastModified": "2026-02-05T21:18:04.399Z",
+          "hash": "3244252bcd1e556105ca5afd21628c5af64fd6af03f2a1885285d5808f61bd53"
+        },
+        {
+          "file": "page§index§hero_section.json",
+          "slug": "hero_section",
+          "schemaVersion": 3,
+          "lastModified": "2026-02-05T21:16:54.285Z",
+          "hash": "ad0114ca8cf8d04c93b4295b18f7fe7298f9a72107de27958c24898d8e4f431d"
+        },
+        {
+          "file": "page§index§stack_section.json",
+          "slug": "stack_section",
+          "schemaVersion": 3,
+          "lastModified": "2026-02-05T21:17:30.737Z",
+          "hash": "d1d4e78e283bce7a597d21938ed72d370761a02cc830ffb6f110de369b2bc98b"
+        },
+        {
+          "file": "page§index§testimonials_section.json",
+          "slug": "testimonials_section",
+          "schemaVersion": 3,
+          "lastModified": "2026-02-05T21:41:34.353Z",
+          "hash": "dff96863a128f97660d938147b5965857bd4803ba1b7f562396ebb1ab7804479"
+        }
+      ]
+    }
+  },
+  "global": {
+    "components": [
+      {
+        "file": "global§global_footer.json",
+        "slug": "global_footer",
+        "schemaVersion": 3,
+        "lastModified": "2026-02-05T21:42:04.170Z",
+        "hash": "3c326e68d74be32e0c8bc457f321837eaef1fdf2463fc2cc1451ff4501eace3f"
+      },
+      {
+        "file": "global§global_header.json",
+        "slug": "global_header",
+        "schemaVersion": 3,
+        "lastModified": "2026-02-05T21:41:45.593Z",
+        "hash": "2107ca31fbe66c0910746ff15123879941ec0e1e10cfab8cdbabcf65077a9361"
+      }
+    ]
+  }
+}

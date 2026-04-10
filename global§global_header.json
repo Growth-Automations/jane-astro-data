@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "file": "src/layouts/Layout.astro",
+    "slug": "global_header",
+    "component": "global_header",
+    "schemaVersion": 3,
+    "dataType": "inline",
+    "collections": {},
+    "_collectionNote": "navLinks not defined as collection: responsive nav duplicates desktop and mobile menus causing DOM count mismatch"
+  },
+  "content": {
+    "logo": {
+      "value": "src/images/logo.png",
+      "relativePath": "./div/nav/div[1]/a/img[1]",
+      "elementType": "image"
+    },
+    "logoIcon": {
+      "value": "src/images/logo-icon.png",
+      "relativePath": "./div/nav/div[1]/a/img[2]",
+      "elementType": "image"
+    },
+    "ctaText": {
+      "value": "Book a call",
+      "relativePath": "./div/nav/div[3]/a",
+      "elementType": "link"
+    },
+    "pagesDropdownIcon": {
+      "value": "SVG Icon",
+      "relativePath": "./div/nav/div[2]/div/button/svg",
+      "elementType": "image",
+      "_suspectedType": "dropdown-icon"
+    },
+    "mobileMenuIcon": {
+      "value": "SVG Icon",
+      "relativePath": "./div/nav/div[3]/div/div/div[2]/div/div/div/button/svg",
+      "elementType": "image",
+      "_suspectedType": "dropdown-icon"
+    },
+    "navLinks": [
+      {
+        "label": {
+          "value": "Home",
+          "relativePath": "./div/nav/div[2]/a[1]",
+          "elementType": "link"
+        },
+        "href": {
+          "value": "/",
+          "relativePath": "./div/nav/div[2]/a[1]",
+          "elementType": "attribute:href"
+        }
+      },
+      {
+        "label": {
+          "value": "About",
+          "relativePath": "./div/nav/div[2]/a[2]",
+          "elementType": "link"
+        },
+        "href": {
+          "value": "/about",
+          "relativePath": "./div/nav/div[2]/a[2]",
+          "elementType": "attribute:href"
+        }
+      },
+      {
+        "label": {
+          "value": "Work",
+          "relativePath": "./div/nav/div[2]/a[3]",
+          "elementType": "link"
+        },
+        "href": {
+          "value": "/work",
+          "relativePath": "./div/nav/div[2]/a[3]",
+          "elementType": "attribute:href"
+        }
+      },
+      {
+        "label": {
+          "value": "Blog",
+          "relativePath": "./div/nav/div[2]/a[4]",
+          "elementType": "link"
+        },
+        "href": {
+          "value": "/blog",
+          "relativePath": "./div/nav/div[2]/a[4]",
+          "elementType": "attribute:href"
+        }
+      },
+      {
+        "label": {
+          "value": "Contact",
+          "relativePath": "./div/nav/div[2]/a[5]",
+          "elementType": "link"
+        },
+        "href": {
+          "value": "/contact",
+          "relativePath": "./div/nav/div[2]/a[5]",
+          "elementType": "attribute:href"
+        }
+      }
+    ]
+  },
+  "styling": {
+    "collectionViews": {},
+    "collectionSelections": {},
+    "collectionFilters": {}
+  },
+  "settings": {
+    "marker": "<div data-elid=\"global_header\" data-elid-type=\"header\" data-elid-global=\"true\">",
+    "fieldSources": {
+      "content": {
+        "type": "inline",
+        "module": "src/components/Header.astro"
+      }
+    },
+    "rootLocation": "//html[1]/body[1]/header[1]"
+  },
+  "rendering": {}
+}

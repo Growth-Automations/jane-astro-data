@@ -1,0 +1,462 @@
+{
+  "meta": {
+    "file": "src/pages/about.astro",
+    "slug": "press_section",
+    "component": "press_section",
+    "schemaVersion": 3,
+    "dataType": "inline",
+    "collections": {
+      "items": {
+        "path": "content.renderedItems",
+        "libraryKey": "content.renderedItems",
+        "itemRole": "inline",
+        "keyField": "title",
+        "source": {
+          "type": "inline",
+          "module": "src/components/Press.astro",
+          "path": "items"
+        },
+        "fields": {
+          "title": {
+            "path": "title.value"
+          },
+          "category": {
+            "path": "category.value"
+          },
+          "linkLabel": {
+            "path": "linkLabel.value"
+          },
+          "displayUrl": {
+            "path": "displayUrl.value"
+          },
+          "categoryIcon": {
+            "path": "categoryIcon.value",
+            "type": "dom"
+          },
+          "linkArrowIcon": {
+            "path": "linkArrowIcon.value",
+            "type": "dom"
+          }
+        },
+        "saveRules": {
+          "itemInsertMode": "append",
+          "allowedActions": [
+            "itemUpdate",
+            "itemReorder"
+          ],
+          "steps": [
+            "write",
+            "format"
+          ],
+          "instructions": "9 press items (title, category, linkLabel, displayUrl, href) defined in Press.astro frontmatter",
+          "defaultAccess": "read-only"
+        }
+      }
+    }
+  },
+  "content": {
+    "title": {
+      "value": "Press and Interviews",
+      "relativePath": "./div/div[1]/h2",
+      "elementType": "text"
+    },
+    "description": {
+      "value": "Recognitions are like tattoos, you only show them off to people you want to impress.",
+      "relativePath": "./div/div[1]/p",
+      "elementType": "text"
+    },
+    "renderedItems": [
+      {
+        "_sourceId": "future-software-engineering",
+        "_index": 0,
+        "title": {
+          "value": "The Future of Software Engineering with Jane Doe",
+          "relativePath": "./div/div[2]/div[1]/div/h3",
+          "elementType": "text"
+        },
+        "category": {
+          "value": "Podcast",
+          "isShown": false,
+          "visibilityState": "hidden:not_rendered",
+          "note": "Content in data source but not rendered in current DOM"
+        },
+        "categoryIcon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div[2]/div[1]/div/div[1]/svg",
+          "elementType": "image",
+          "_suspectedType": "category-icon"
+        },
+        "linkLabel": {
+          "value": "Listen to podcast",
+          "relativePath": "./div/div[2]/div[1]/div/div[2]/a",
+          "elementType": "link"
+        },
+        "displayUrl": {
+          "value": "spotify.com",
+          "relativePath": "./div/div[2]/div[1]/div/div[2]/p",
+          "elementType": "text"
+        },
+        "linkArrowIcon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div[2]/div[1]/div/div[2]/a/svg",
+          "elementType": "image",
+          "_suspectedType": "arrow-icon"
+        }
+      },
+      {
+        "_sourceId": "building-community",
+        "_index": 1,
+        "title": {
+          "value": "Building a Sense of Community Around Your Business - with Duncan Jones Junior",
+          "relativePath": "./div/div[2]/div[2]/div/h3",
+          "elementType": "text"
+        },
+        "category": {
+          "value": "Podcast",
+          "isShown": false,
+          "visibilityState": "hidden:not_rendered",
+          "note": "Content in data source but not rendered in current DOM"
+        },
+        "categoryIcon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div[2]/div[2]/div/div[1]/svg",
+          "elementType": "image",
+          "_suspectedType": "category-icon"
+        },
+        "linkLabel": {
+          "value": "Listen to podcast",
+          "relativePath": "./div/div[2]/div[2]/div/div[2]/a",
+          "elementType": "link"
+        },
+        "displayUrl": {
+          "value": "spotify.com",
+          "relativePath": "./div/div[2]/div[2]/div/div[2]/p",
+          "elementType": "text"
+        },
+        "linkArrowIcon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div[2]/div[2]/div/div[2]/a/svg",
+          "elementType": "image",
+          "_suspectedType": "arrow-icon"
+        }
+      },
+      {
+        "_sourceId": "14-things-ruby-rails",
+        "_index": 2,
+        "title": {
+          "value": "14 Things You Should Know Before Starting With Ruby On Rails",
+          "relativePath": "./div/div[2]/div[3]/div/h3",
+          "elementType": "text"
+        },
+        "category": {
+          "value": "Article",
+          "isShown": false,
+          "visibilityState": "hidden:not_rendered",
+          "note": "Content in data source but not rendered in current DOM"
+        },
+        "categoryIcon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div[2]/div[3]/div/div[1]/svg",
+          "elementType": "image",
+          "_suspectedType": "category-icon"
+        },
+        "linkLabel": {
+          "value": "Read the article",
+          "relativePath": "./div/div[2]/div[3]/div/div[2]/a",
+          "elementType": "link"
+        },
+        "displayUrl": {
+          "value": "gorails.com",
+          "relativePath": "./div/div[2]/div[3]/div/div[2]/p",
+          "elementType": "text"
+        },
+        "linkArrowIcon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div[2]/div[3]/div/div[2]/a/svg",
+          "elementType": "image",
+          "_suspectedType": "arrow-icon"
+        }
+      },
+      {
+        "_sourceId": "service-objects",
+        "_index": 3,
+        "title": {
+          "value": "Why Service Objects Aren't Evil (And Why You Should Start Using Them)",
+          "relativePath": "./div/div[2]/div[4]/div/h3",
+          "elementType": "text"
+        },
+        "category": {
+          "value": "RailsConf 2022",
+          "isShown": false,
+          "visibilityState": "hidden:not_rendered",
+          "note": "Content in data source but not rendered in current DOM"
+        },
+        "categoryIcon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div[2]/div[4]/div/div[1]/svg",
+          "elementType": "image",
+          "_suspectedType": "category-icon"
+        },
+        "linkLabel": {
+          "value": "Watch the talk",
+          "relativePath": "./div/div[2]/div[4]/div/div[2]/a",
+          "elementType": "link"
+        },
+        "displayUrl": {
+          "value": "youtube.com",
+          "relativePath": "./div/div[2]/div[4]/div/div[2]/p",
+          "elementType": "text"
+        },
+        "linkArrowIcon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div[2]/div[4]/div/div[2]/a/svg",
+          "elementType": "image",
+          "_suspectedType": "arrow-icon"
+        }
+      },
+      {
+        "_sourceId": "top-10-developers",
+        "_index": 4,
+        "title": {
+          "value": "Meet the top 10 developers to watch in 2021",
+          "relativePath": "./div/div[2]/div[5]/div/h3",
+          "elementType": "text"
+        },
+        "category": {
+          "value": "Article",
+          "isShown": false,
+          "visibilityState": "hidden:not_rendered",
+          "note": "Content in data source but not rendered in current DOM"
+        },
+        "categoryIcon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div[2]/div[5]/div/div[1]/svg",
+          "elementType": "image",
+          "_suspectedType": "category-icon"
+        },
+        "linkLabel": {
+          "value": "Read the article",
+          "relativePath": "./div/div[2]/div[5]/div/div[2]/a",
+          "elementType": "link"
+        },
+        "displayUrl": {
+          "value": "hackernews.com",
+          "relativePath": "./div/div[2]/div[5]/div/div[2]/p",
+          "elementType": "text"
+        },
+        "linkArrowIcon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div[2]/div[5]/div/div[2]/a/svg",
+          "elementType": "image",
+          "_suspectedType": "arrow-icon"
+        }
+      },
+      {
+        "_sourceId": "flow-state",
+        "_index": 5,
+        "title": {
+          "value": "Flow State for Software Engineers – Cultivate flow with the people who build software",
+          "relativePath": "./div/div[2]/div[6]/div/h3",
+          "elementType": "text"
+        },
+        "category": {
+          "value": "Podcast",
+          "isShown": false,
+          "visibilityState": "hidden:not_rendered",
+          "note": "Content in data source but not rendered in current DOM"
+        },
+        "categoryIcon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div[2]/div[6]/div/div[1]/svg",
+          "elementType": "image",
+          "_suspectedType": "category-icon"
+        },
+        "linkLabel": {
+          "value": "Listen to podcast",
+          "relativePath": "./div/div[2]/div[6]/div/div[2]/a",
+          "elementType": "link"
+        },
+        "displayUrl": {
+          "value": "youtube.com",
+          "relativePath": "./div/div[2]/div[6]/div/div[2]/p",
+          "elementType": "text"
+        },
+        "linkArrowIcon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div[2]/div[6]/div/div[2]/a/svg",
+          "elementType": "image",
+          "_suspectedType": "arrow-icon"
+        }
+      },
+      {
+        "_sourceId": "building-community-2",
+        "_index": 6,
+        "title": {
+          "value": "Building a Sense of Community Around Your Business - with Duncan Jones Junior",
+          "relativePath": "./div/div[2]/div[7]/div/h3",
+          "elementType": "text"
+        },
+        "category": {
+          "value": "Podcast",
+          "isShown": false,
+          "visibilityState": "hidden:not_rendered",
+          "note": "Content in data source but not rendered in current DOM"
+        },
+        "categoryIcon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div[2]/div[7]/div/div[1]/svg",
+          "elementType": "image",
+          "_suspectedType": "category-icon"
+        },
+        "linkLabel": {
+          "value": "Listen to podcast",
+          "relativePath": "./div/div[2]/div[7]/div/div[2]/a",
+          "elementType": "link"
+        },
+        "displayUrl": {
+          "value": "spotify.com",
+          "relativePath": "./div/div[2]/div[7]/div/div[2]/p",
+          "elementType": "text"
+        },
+        "linkArrowIcon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div[2]/div[7]/div/div[2]/a/svg",
+          "elementType": "image",
+          "_suspectedType": "arrow-icon"
+        }
+      },
+      {
+        "_sourceId": "web-developer-income",
+        "_index": 7,
+        "title": {
+          "value": "How much money can a web developer with 100k subscribers on Youtube make with AdSense, affiliates and sponsors?",
+          "relativePath": "./div/div[2]/div[8]/div/h3",
+          "elementType": "text"
+        },
+        "category": {
+          "value": "Press",
+          "isShown": false,
+          "visibilityState": "hidden:not_rendered",
+          "note": "Content in data source but not rendered in current DOM"
+        },
+        "categoryIcon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div[2]/div[8]/div/div[1]/svg",
+          "elementType": "image",
+          "_suspectedType": "category-icon"
+        },
+        "linkLabel": {
+          "value": "Read the article",
+          "relativePath": "./div/div[2]/div[8]/div/div[2]/a",
+          "elementType": "link"
+        },
+        "displayUrl": {
+          "value": "businessinsider.com",
+          "relativePath": "./div/div[2]/div[8]/div/div[2]/p",
+          "elementType": "text"
+        },
+        "linkArrowIcon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div[2]/div[8]/div/div[2]/a/svg",
+          "elementType": "image",
+          "_suspectedType": "arrow-icon"
+        }
+      },
+      {
+        "_sourceId": "trix-editor",
+        "_index": 8,
+        "title": {
+          "value": "Extending and Embedding Rich Media in the Rails Universe with the Trix Editor",
+          "relativePath": "./div/div[2]/div[9]/div/h3",
+          "elementType": "text"
+        },
+        "category": {
+          "value": "RailsConf 2021",
+          "isShown": false,
+          "visibilityState": "hidden:not_rendered",
+          "note": "Content in data source but not rendered in current DOM"
+        },
+        "categoryIcon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div[2]/div[9]/div/div[1]/svg",
+          "elementType": "image",
+          "_suspectedType": "category-icon"
+        },
+        "linkLabel": {
+          "value": "Watch the talk",
+          "relativePath": "./div/div[2]/div[9]/div/div[2]/a",
+          "elementType": "link"
+        },
+        "displayUrl": {
+          "value": "youtube.com",
+          "relativePath": "./div/div[2]/div[9]/div/div[2]/p",
+          "elementType": "text"
+        },
+        "linkArrowIcon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div[2]/div[9]/div/div[2]/a/svg",
+          "elementType": "image",
+          "_suspectedType": "arrow-icon"
+        }
+      }
+    ]
+  },
+  "rendering": {
+    "items": {
+      "iterableSelector": "[data-elid='press_section'] + * .columns-1 > div",
+      "fields": {
+        "title": {
+          "selector": "div > h3",
+          "elementType": "text"
+        },
+        "categoryIcon": {
+          "selector": "div > div:nth-of-type(1) > svg",
+          "elementType": "image"
+        },
+        "linkLabel": {
+          "selector": "div > div:nth-of-type(2) > a",
+          "elementType": "link"
+        },
+        "displayUrl": {
+          "selector": "div > div:nth-of-type(2) > p",
+          "elementType": "text"
+        },
+        "linkArrowIcon": {
+          "selector": "div > div:nth-of-type(2) > a > svg",
+          "elementType": "image"
+        }
+      }
+    }
+  },
+  "styling": {
+    "collectionViews": {},
+    "collectionSelections": {
+      "items": {
+        "ids": [
+          "future-software-engineering",
+          "building-community",
+          "14-things-ruby-rails",
+          "service-objects",
+          "top-10-developers",
+          "flow-state",
+          "building-community-2",
+          "web-developer-income",
+          "trix-editor"
+        ],
+        "path": "content.renderedItems"
+      }
+    },
+    "collectionFilters": {}
+  },
+  "settings": {
+    "marker": "<div data-elid=\"press_section\" data-elid-type=\"section\">",
+    "fieldSources": {
+      "content": {
+        "type": "inline",
+        "module": "src/components/Press.astro"
+      }
+    },
+    "sort_order": 6,
+    "rootLocation": "//html[1]/body[1]/section[6]"
+  }
+}

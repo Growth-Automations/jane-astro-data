@@ -1,0 +1,207 @@
+{
+  "meta": {
+    "file": "src/pages/about.astro",
+    "slug": "awards_section",
+    "component": "awards_section",
+    "schemaVersion": 3,
+    "dataType": "inline",
+    "collections": {
+      "awards": {
+        "path": "content.renderedAwards",
+        "libraryKey": "content.renderedAwards",
+        "itemRole": "inline",
+        "keyField": "name",
+        "source": {
+          "type": "inline",
+          "module": "src/components/Awards.astro",
+          "path": "awards"
+        },
+        "fields": {
+          "logo": {
+            "path": "logo.value"
+          }
+        },
+        "saveRules": {
+          "itemInsertMode": "append",
+          "allowedActions": [
+            "itemUpdate",
+            "itemReorder"
+          ],
+          "steps": [
+            "write",
+            "format"
+          ],
+          "instructions": "12 award items (logo) defined in Awards.astro frontmatter",
+          "defaultAccess": "read-only"
+        }
+      }
+    }
+  },
+  "content": {
+    "title": {
+      "value": "My awards and acknowledgements",
+      "relativePath": "./div/div[1]/h2",
+      "elementType": "text"
+    },
+    "description": {
+      "value": "Recognitions are like tattoos, you only show them off to people you want to impress.",
+      "relativePath": "./div/div[1]/p",
+      "elementType": "text"
+    },
+    "renderedAwards": [
+      {
+        "_sourceId": "award-1",
+        "_index": 0,
+        "logo": {
+          "value": "src/images/logos/awards/awwwards.svg",
+          "relativePath": "./div/div[2]/div[1]/div[1]/img",
+          "elementType": "image"
+        }
+      },
+      {
+        "_sourceId": "award-2",
+        "_index": 1,
+        "logo": {
+          "value": "src/images/logos/awards/css-design-awards.svg",
+          "relativePath": "./div/div[2]/div[1]/div[2]/img",
+          "elementType": "image"
+        }
+      },
+      {
+        "_sourceId": "award-3",
+        "_index": 2,
+        "logo": {
+          "value": "src/images/logos/awards/adobe.svg",
+          "relativePath": "./div/div[2]/div[1]/div[3]/img",
+          "elementType": "image"
+        }
+      },
+      {
+        "_sourceId": "award-4",
+        "_index": 3,
+        "logo": {
+          "value": "src/images/logos/awards/behance.svg",
+          "relativePath": "./div/div[2]/div[1]/div[4]/img",
+          "elementType": "image"
+        }
+      },
+      {
+        "_sourceId": "award-5",
+        "_index": 4,
+        "logo": {
+          "value": "src/images/logos/awards/dribbble.svg",
+          "relativePath": "./div/div[2]/div[1]/div[5]/img",
+          "elementType": "image"
+        }
+      },
+      {
+        "_sourceId": "award-6",
+        "_index": 5,
+        "logo": {
+          "value": "src/images/logos/awards/logoipsum-1.svg",
+          "relativePath": "./div/div[2]/div[1]/div[6]/img",
+          "elementType": "image"
+        }
+      },
+      {
+        "_sourceId": "award-7",
+        "_index": 6,
+        "logo": {
+          "value": "src/images/logos/awards/logoipsum-2.svg",
+          "relativePath": "./div/div[2]/div[1]/div[7]/img",
+          "elementType": "image"
+        }
+      },
+      {
+        "_sourceId": "award-8",
+        "_index": 7,
+        "logo": {
+          "value": "src/images/logos/awards/logoipsum-3.svg",
+          "relativePath": "./div/div[2]/div[1]/div[8]/img",
+          "elementType": "image"
+        }
+      },
+      {
+        "_sourceId": "award-9",
+        "_index": 8,
+        "logo": {
+          "value": "src/images/logos/awards/logoipsum-4.svg",
+          "relativePath": "./div/div[2]/div[1]/div[9]/img",
+          "elementType": "image"
+        }
+      },
+      {
+        "_sourceId": "award-10",
+        "_index": 9,
+        "logo": {
+          "value": "src/images/logos/awards/logoipsum-5.svg",
+          "relativePath": "./div/div[2]/div[1]/div[10]/img",
+          "elementType": "image"
+        }
+      },
+      {
+        "_sourceId": "award-11",
+        "_index": 10,
+        "logo": {
+          "value": "src/images/logos/awards/logoipsum-6.svg",
+          "relativePath": "./div/div[2]/div[1]/div[11]/img",
+          "elementType": "image"
+        }
+      },
+      {
+        "_sourceId": "award-12",
+        "_index": 11,
+        "logo": {
+          "value": "src/images/logos/awards/logoipsum-7.svg",
+          "relativePath": "./div/div[2]/div[1]/div[12]/img",
+          "elementType": "image"
+        }
+      }
+    ]
+  },
+  "rendering": {
+    "awards": {
+      "iterableSelector": "[data-elid='awards_section'] + * .grid > div",
+      "fields": {
+        "logo": {
+          "selector": "img",
+          "elementType": "image"
+        }
+      }
+    }
+  },
+  "styling": {
+    "collectionViews": {},
+    "collectionSelections": {
+      "awards": {
+        "ids": [
+          "award-1",
+          "award-2",
+          "award-3",
+          "award-4",
+          "award-5",
+          "award-6",
+          "award-7",
+          "award-8",
+          "award-9",
+          "award-10",
+          "award-11",
+          "award-12"
+        ],
+        "path": "content.renderedAwards"
+      }
+    },
+    "collectionFilters": {}
+  },
+  "settings": {
+    "marker": "<div data-elid=\"awards_section\" data-elid-type=\"section\">",
+    "fieldSources": {
+      "content": {
+        "type": "inline",
+        "module": "src/components/Awards.astro"
+      }
+    },
+    "sort_order": 5,
+    "rootLocation": "//html[1]/body[1]/section[5]"
+  }
+}

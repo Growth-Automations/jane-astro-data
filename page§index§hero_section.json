@@ -1,0 +1,119 @@
+{
+  "meta": {
+    "file": "src/pages/index.astro",
+    "slug": "hero_section",
+    "component": "hero_section",
+    "schemaVersion": 3,
+    "dataType": "inline",
+    "collections": {}
+  },
+  "content": {
+    "title": {
+      "value": "Helping businesses turn their ideas into reality",
+      "relativePath": "./div/div[1]/h1",
+      "elementType": "text"
+    },
+    "description": {
+      "value": "I'm a passionate developer, entrepreneur, and general technology enthusiast living in San Francisco. I've worked with hundreds of startups to help them develop their ideas into profitable businesses.",
+      "relativePath": "./div/div[1]/p",
+      "elementType": "text"
+    },
+    "ctaText": {
+      "value": "Book a call with me",
+      "relativePath": "./div/div[1]/div/a",
+      "elementType": "link"
+    },
+    "annotation": {
+      "value": "Hi, I'm Jane!",
+      "relativePath": "./div/div[2]/div/div/div[1]/span",
+      "elementType": "text"
+    },
+    "badge1Text": {
+      "value": "4 years of experience",
+      "relativePath": "./div/div[2]/div/div/div[2]",
+      "elementType": "text"
+    },
+    "badge2Text": {
+      "value": "5 years of experience",
+      "relativePath": "./div/div[2]/div/div/div[3]",
+      "elementType": "text"
+    },
+    "badge3Text": {
+      "value": "3 years of experience",
+      "relativePath": "./div/div[2]/div/div/div[4]",
+      "elementType": "text"
+    },
+    "bgGradient": {
+      "value": "src/images/home-hero-gradient.svg",
+      "relativePath": "./img",
+      "elementType": "image"
+    },
+    "heroPortrait": {
+      "value": "src/images/hero-portrait.jpg",
+      "relativePath": "./div/div[2]/div/img",
+      "elementType": "image"
+    },
+    "annotationArrow": {
+      "value": "SVG Icon",
+      "relativePath": "./div/div[2]/div/div/div[1]/svg",
+      "elementType": "image",
+      "_suspectedType": "decorative-svg"
+    },
+    "titleUnderline": {
+      "value": "SVG Icon",
+      "relativePath": "./div/div[1]/h1/span[1]/svg",
+      "elementType": "image",
+      "_suspectedType": "decorative-svg"
+    },
+    "socialIcon1": {
+      "value": "SVG Icon",
+      "relativePath": "./div/div[1]/div/div/a[1]/svg",
+      "elementType": "image",
+      "_suspectedType": "social-icon"
+    },
+    "socialIcon2": {
+      "value": "SVG Icon",
+      "relativePath": "./div/div[1]/div/div/a[2]/svg",
+      "elementType": "image",
+      "_suspectedType": "social-icon"
+    },
+    "socialIcon3": {
+      "value": "SVG Icon",
+      "relativePath": "./div/div[1]/div/div/a[3]/svg",
+      "elementType": "image",
+      "_suspectedType": "social-icon"
+    },
+    "badge1Image": {
+      "value": "src/images/logos/icons/figma.svg",
+      "relativePath": "./div/div[2]/div/div/div[2]/img",
+      "elementType": "image"
+    },
+    "badge2Image": {
+      "value": "src/images/logos/icons/sketch.svg",
+      "relativePath": "./div/div[2]/div/div/div[3]/img",
+      "elementType": "image"
+    },
+    "badge3Image": {
+      "value": "src/images/logos/icons/tailwind.svg",
+      "relativePath": "./div/div[2]/div/div/div[4]/img",
+      "elementType": "image"
+    }
+  },
+  "styling": {
+    "collectionViews": {},
+    "collectionSelections": {},
+    "collectionFilters": {}
+  },
+  "settings": {
+    "marker": "<div data-elid=\"hero_section\" data-elid-type=\"section\">",
+    "fieldSources": {
+      "content": {
+        "type": "inline",
+        "module": "src/components/Hero.astro"
+      }
+    },
+    "sort_order": 1,
+    "rootLocation": "//html[1]/body[1]/section[1]"
+  },
+  "rendering": {}
+}

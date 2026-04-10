@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 3,
+  "siteName": "jane-astro",
+  "siteLabel": "jane-astro",
+  "content": {
+    "componentData": {
+      "static": [
+        {
+          "path": "/about",
+          "title": "About",
+          "dataModule": "/jane-astro-data/about.json",
+          "encodedRoute": "about"
+        },
+        {
+          "path": "/contact",
+          "title": "Contact",
+          "dataModule": "/jane-astro-data/contact.json",
+          "encodedRoute": "contact"
+        },
+        {
+          "path": "/",
+          "title": "Home",
+          "dataModule": "/jane-astro-data/index.json",
+          "encodedRoute": "index"
+        }
+      ]
+    }
+  },
+  "globals": {
+    "componentData": {
+      "module": "/jane-astro-data/globalComponents.json",
+      "export": "default"
+    }
+  },
+  "runtimeRules": {
+    "failClosed": true,
+    "formatOnWrite": true
+  },
+  "collectionDefaults": {},
+  "collectionOverrides": {},
+  "collectionStatus": {
+    "defined": true,
+    "reason": "11 collections resolved: 7 inline from component frontmatter, 2 config-module from config.ts, 2 content-collection from Astro content",
+    "reviewedAt": "2026-02-05"
+  },
+  "mediaDefaults": {
+    "image": {
+      "type": "image",
+      "directory": "src/images",
+      "alias": "@images",
+      "name": {
+        "strategy": "${componentSlug}-${field}-${timestamp}",
+        "separator": "-",
+        "timestampFormat": "yyyyMMdd-HHmmss",
+        "maxLength": 80
+      }
+    },
+    "png": {
+      "type": "image",
+      "directory": "src/images",
+      "alias": "@images",
+      "name": {
+        "strategy": "${componentSlug}-${field}-${timestamp}",
+        "separator": "-",
+        "timestampFormat": "yyyyMMdd-HHmmss",
+        "maxLength": 80
+      }
+    },
+    "jpg": {
+      "type": "image",
+      "directory": "src/images",
+      "alias": "@images",
+      "name": {
+        "strategy": "${componentSlug}-${field}-${timestamp}",
+        "separator": "-",
+        "timestampFormat": "yyyyMMdd-HHmmss",
+        "maxLength": 80
+      }
+    },
+    "webp": {
+      "type": "image",
+      "directory": "src/images",
+      "alias": "@images",
+      "name": {
+        "strategy": "${componentSlug}-${field}-${timestamp}",
+        "separator": "-",
+        "timestampFormat": "yyyyMMdd-HHmmss",
+        "maxLength": 80
+      }
+    },
+    "svg": {
+      "type": "svg",
+      "directory": "src/images",
+      "alias": "@images",
+      "contentType": "icon",
+      "name": {
+        "strategy": "${componentSlug}-${field}"
+      }
+    }
+  },
+  "mediaVariables": {
+    "experience_section.features.*.iconName": {
+      "type": "svg",
+      "name": {
+        "strategy": "${componentSlug}-${field}"
+      },
+      "contentType": "icon",
+      "steps": [
+        "replace"
+      ]
+    }
+  },
+  "mediaGuides": {
+    "images": {
+      "type": "image",
+      "alias": "@images",
+      "description": "Site images and photos. Uses Astro Image component with direct imports.",
+      "formats": [
+        "jpg",
+        "png",
+        "webp",
+        "svg"
+      ],
+      "maxSize": "2MB",
+      "uploadSteps": [
+        "Upload via editor to src/images",
+        "Reference as @images/${fileName}",
+        "Build will optimize images via Astro Image"
+      ]
+    }
+  },
+  "cosmeticOverrides": {}
+}

@@ -1,0 +1,348 @@
+{
+  "global_footer": {
+    "meta": {
+      "file": "src/layouts/Layout.astro",
+      "slug": "global_footer",
+      "component": "global_footer",
+      "schemaVersion": 3,
+      "dataType": "inline",
+      "collections": {},
+      "_collectionNote": "Footer nav links not defined as collection: responsive nav duplicates cause DOM count mismatch. Social links sourced from SOCIALS config array."
+    },
+    "content": {
+      "newsletterTitle": {
+        "value": "Subscribe to my newsletter",
+        "relativePath": "./div/div[2]/div/div/div/h3",
+        "elementType": "text"
+      },
+      "newsletterDescription": {
+        "value": "Join 10,000+ designers and get creative site breakdowns, design musings and tips every Monday.",
+        "relativePath": "./div/div[2]/div/div/div/p",
+        "elementType": "text"
+      },
+      "newsletterBg": {
+        "value": "src/images/newsletter-bg.png",
+        "relativePath": "./div/div[2]/div/img",
+        "elementType": "image"
+      },
+      "subscribeButton": {
+        "value": "Subscribe",
+        "relativePath": "./div/div[2]/div/div/form/button",
+        "elementType": "text"
+      },
+      "ctaTitle": {
+        "value": "Lets make something great together",
+        "relativePath": "./footer/div/div[1]/div[1]/h3",
+        "elementType": "text"
+      },
+      "ctaButtonText": {
+        "value": "Book a call",
+        "relativePath": "./footer/div/div[1]/div[1]/div/a",
+        "elementType": "link"
+      },
+      "ctaButtonArrowIcon": {
+        "value": "SVG Icon",
+        "relativePath": "./footer/div/div[1]/div[1]/div/a/svg",
+        "elementType": "image",
+        "_suspectedType": "arrow-icon"
+      },
+      "ctaDescription": {
+        "value": "Iced pumpkin ristretto irish trifecta robusta trade froth affogato barista con barista cappuccino filter roast.",
+        "relativePath": "./footer/div/div[1]/div[2]/p",
+        "elementType": "text"
+      },
+      "ctaSecondaryLink": {
+        "value": "Book a call",
+        "relativePath": "./footer/div/div[1]/div[2]/a",
+        "elementType": "link"
+      },
+      "ctaSecondaryArrowIcon": {
+        "value": "SVG Icon",
+        "relativePath": "./footer/div/div[1]/div[2]/a/svg",
+        "elementType": "image",
+        "_suspectedType": "arrow-icon"
+      },
+      "socialLinks": [
+        {
+          "label": {
+            "value": "Email me",
+            "relativePath": "./footer/div/div[1]/div[2]/div/a[1]",
+            "elementType": "link"
+          },
+          "icon": {
+            "value": "SVG Icon",
+            "relativePath": "./footer/div/div[1]/div[2]/div/a[1]/svg",
+            "elementType": "image",
+            "_suspectedType": "social-icon"
+          }
+        },
+        {
+          "label": {
+            "value": "Dribbble",
+            "relativePath": "./footer/div/div[1]/div[2]/div/a[2]",
+            "elementType": "link"
+          },
+          "icon": {
+            "value": "SVG Icon",
+            "relativePath": "./footer/div/div[1]/div[2]/div/a[2]/svg",
+            "elementType": "image",
+            "_suspectedType": "social-icon"
+          }
+        },
+        {
+          "label": {
+            "value": "Instagram",
+            "relativePath": "./footer/div/div[1]/div[2]/div/a[3]",
+            "elementType": "link"
+          },
+          "icon": {
+            "value": "SVG Icon",
+            "relativePath": "./footer/div/div[1]/div[2]/div/a[3]/svg",
+            "elementType": "image",
+            "_suspectedType": "social-icon"
+          }
+        },
+        {
+          "label": {
+            "value": "Twitter / X",
+            "relativePath": "./footer/div/div[1]/div[2]/div/a[4]",
+            "elementType": "link"
+          },
+          "icon": {
+            "value": "SVG Icon",
+            "relativePath": "./footer/div/div[1]/div[2]/div/a[4]/svg",
+            "elementType": "image",
+            "_suspectedType": "social-icon"
+          }
+        },
+        {
+          "label": {
+            "value": "LinkedIn",
+            "relativePath": "./footer/div/div[1]/div[2]/div/a[5]",
+            "elementType": "link"
+          },
+          "icon": {
+            "value": "SVG Icon",
+            "relativePath": "./footer/div/div[1]/div[2]/div/a[5]/svg",
+            "elementType": "image",
+            "_suspectedType": "social-icon"
+          }
+        },
+        {
+          "label": {
+            "value": "Github",
+            "relativePath": "./footer/div/div[1]/div[2]/div/a[6]",
+            "elementType": "link"
+          },
+          "icon": {
+            "value": "SVG Icon",
+            "relativePath": "./footer/div/div[1]/div[2]/div/a[6]/svg",
+            "elementType": "image",
+            "_suspectedType": "social-icon"
+          }
+        }
+      ],
+      "copyright": {
+        "value": "© 2026 Tailwind Awesome. All rights reserved.",
+        "relativePath": "./footer/div/div[2]/p",
+        "elementType": "text"
+      },
+      "navLinks": [
+        {
+          "label": {
+            "value": "Home",
+            "relativePath": "./footer/div/div[2]/div/a[1]",
+            "elementType": "link"
+          },
+          "href": {
+            "value": "/",
+            "relativePath": "./footer/div/div[2]/div/a[1]",
+            "elementType": "attribute:href"
+          }
+        },
+        {
+          "label": {
+            "value": "About",
+            "relativePath": "./footer/div/div[2]/div/a[2]",
+            "elementType": "link"
+          },
+          "href": {
+            "value": "/about",
+            "relativePath": "./footer/div/div[2]/div/a[2]",
+            "elementType": "attribute:href"
+          }
+        },
+        {
+          "label": {
+            "value": "Work",
+            "relativePath": "./footer/div/div[2]/div/a[3]",
+            "elementType": "link"
+          },
+          "href": {
+            "value": "/work",
+            "relativePath": "./footer/div/div[2]/div/a[3]",
+            "elementType": "attribute:href"
+          }
+        },
+        {
+          "label": {
+            "value": "Blog",
+            "relativePath": "./footer/div/div[2]/div/a[4]",
+            "elementType": "link"
+          },
+          "href": {
+            "value": "/blog",
+            "relativePath": "./footer/div/div[2]/div/a[4]",
+            "elementType": "attribute:href"
+          }
+        },
+        {
+          "label": {
+            "value": "Contact",
+            "relativePath": "./footer/div/div[2]/div/a[5]",
+            "elementType": "link"
+          },
+          "href": {
+            "value": "/contact",
+            "relativePath": "./footer/div/div[2]/div/a[5]",
+            "elementType": "attribute:href"
+          }
+        }
+      ]
+    },
+    "styling": {
+      "collectionViews": {},
+      "collectionSelections": {},
+      "collectionFilters": {}
+    },
+    "settings": {
+      "marker": "<div data-elid=\"global_footer\" data-elid-type=\"footer\" data-elid-global=\"true\">",
+      "fieldSources": {
+        "content": {
+          "type": "inline",
+          "module": "src/components/Footer.astro"
+        }
+      },
+      "rootLocation": "//html[1]/body[1]/section[7]"
+    },
+    "rendering": {}
+  },
+  "global_header": {
+    "meta": {
+      "file": "src/layouts/Layout.astro",
+      "slug": "global_header",
+      "component": "global_header",
+      "schemaVersion": 3,
+      "dataType": "inline",
+      "collections": {},
+      "_collectionNote": "navLinks not defined as collection: responsive nav duplicates desktop and mobile menus causing DOM count mismatch"
+    },
+    "content": {
+      "logo": {
+        "value": "src/images/logo.png",
+        "relativePath": "./div/nav/div[1]/a/img[1]",
+        "elementType": "image"
+      },
+      "logoIcon": {
+        "value": "src/images/logo-icon.png",
+        "relativePath": "./div/nav/div[1]/a/img[2]",
+        "elementType": "image"
+      },
+      "ctaText": {
+        "value": "Book a call",
+        "relativePath": "./div/nav/div[3]/a",
+        "elementType": "link"
+      },
+      "pagesDropdownIcon": {
+        "value": "SVG Icon",
+        "relativePath": "./div/nav/div[2]/div/button/svg",
+        "elementType": "image",
+        "_suspectedType": "dropdown-icon"
+      },
+      "mobileMenuIcon": {
+        "value": "SVG Icon",
+        "relativePath": "./div/nav/div[3]/div/div/div[2]/div/div/div/button/svg",
+        "elementType": "image",
+        "_suspectedType": "dropdown-icon"
+      },
+      "navLinks": [
+        {
+          "label": {
+            "value": "Home",
+            "relativePath": "./div/nav/div[2]/a[1]",
+            "elementType": "link"
+          },
+          "href": {
+            "value": "/",
+            "relativePath": "./div/nav/div[2]/a[1]",
+            "elementType": "attribute:href"
+          }
+        },
+        {
+          "label": {
+            "value": "About",
+            "relativePath": "./div/nav/div[2]/a[2]",
+            "elementType": "link"
+          },
+          "href": {
+            "value": "/about",
+            "relativePath": "./div/nav/div[2]/a[2]",
+            "elementType": "attribute:href"
+          }
+        },
+        {
+          "label": {
+            "value": "Work",
+            "relativePath": "./div/nav/div[2]/a[3]",
+            "elementType": "link"
+          },
+          "href": {
+            "value": "/work",
+            "relativePath": "./div/nav/div[2]/a[3]",
+            "elementType": "attribute:href"
+          }
+        },
+        {
+          "label": {
+            "value": "Blog",
+            "relativePath": "./div/nav/div[2]/a[4]",
+            "elementType": "link"
+          },
+          "href": {
+            "value": "/blog",
+            "relativePath": "./div/nav/div[2]/a[4]",
+            "elementType": "attribute:href"
+          }
+        },
+        {
+          "label": {
+            "value": "Contact",
+            "relativePath": "./div/nav/div[2]/a[5]",
+            "elementType": "link"
+          },
+          "href": {
+            "value": "/contact",
+            "relativePath": "./div/nav/div[2]/a[5]",
+            "elementType": "attribute:href"
+          }
+        }
+      ]
+    },
+    "styling": {
+      "collectionViews": {},
+      "collectionSelections": {},
+      "collectionFilters": {}
+    },
+    "settings": {
+      "marker": "<div data-elid=\"global_header\" data-elid-type=\"header\" data-elid-global=\"true\">",
+      "fieldSources": {
+        "content": {
+          "type": "inline",
+          "module": "src/components/Header.astro"
+        }
+      },
+      "rootLocation": "//html[1]/body[1]/header[1]"
+    },
+    "rendering": {}
+  }
+}

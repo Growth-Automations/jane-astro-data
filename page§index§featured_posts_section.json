@@ -1,0 +1,304 @@
+{
+  "meta": {
+    "file": "src/pages/index.astro",
+    "slug": "featured_posts_section",
+    "component": "featured_posts_section",
+    "schemaVersion": 3,
+    "dataType": "content-collection",
+    "collections": {
+      "posts": {
+        "path": "content.renderedPosts",
+        "libraryKey": "content.renderedPosts",
+        "itemRole": "markdown",
+        "keyField": "title",
+        "source": {
+          "type": "content-collection",
+          "module": "src/content/blog/",
+          "path": "getSortedPosts().slice(0,3)"
+        },
+        "fields": {
+          "category": {
+            "path": "category.value"
+          },
+          "title": {
+            "path": "title.value"
+          },
+          "description": {
+            "path": "description.value"
+          },
+          "publishDate": {
+            "path": "publishDate.value"
+          },
+          "readTime": {
+            "path": "readTime.value"
+          },
+          "thumbnail": {
+            "path": "thumbnail.value"
+          },
+          "categoryIcon": {
+            "type": "dom"
+          },
+          "dateIcon": {
+            "type": "dom"
+          },
+          "clockIcon": {
+            "type": "dom"
+          }
+        },
+        "saveRules": {
+          "itemInsertMode": "append",
+          "allowedActions": [
+            "itemInsert",
+            "itemUpdate",
+            "itemDelete",
+            "itemReorder"
+          ],
+          "steps": [
+            "write",
+            "format"
+          ],
+          "instructions": "3 featured blog posts (category, title, description, publishDate, readTime, thumbnail) from Astro content collection",
+          "defaultAccess": "read-only"
+        }
+      }
+    }
+  },
+  "content": {
+    "title": {
+      "value": "Thoughts on design, business and indie-hacking",
+      "relativePath": "./div/h2",
+      "elementType": "text"
+    },
+    "titleUnderline": {
+      "value": "SVG Icon",
+      "relativePath": "./div/h2/span/svg",
+      "elementType": "image",
+      "_suspectedType": "decorative-svg"
+    },
+    "readLatestLabel": {
+      "value": "Read the latest",
+      "relativePath": "./div/div/div/span",
+      "elementType": "text"
+    },
+    "readLatestArrow": {
+      "value": "SVG Icon",
+      "relativePath": "./div/div/div/svg",
+      "elementType": "image",
+      "_suspectedType": "decorative-svg"
+    },
+    "renderedPosts": [
+      {
+        "_sourceId": "chatgpt-developers-best-friend",
+        "_index": 0,
+        "category": {
+          "value": "Web Development",
+          "relativePath": "./div/div/article[1]/div[2]/a",
+          "elementType": "link"
+        },
+        "title": {
+          "value": "ChatGPT : A Developer's Best Friend or Worst Enemy?",
+          "relativePath": "./div/div/article[1]/div[2]/div[1]/h3",
+          "elementType": "text"
+        },
+        "description": {
+          "value": "Explore the pros and cons of ChatGPT as a tool for developers, and whether its benefits outweigh its potential drawbacks.",
+          "relativePath": "./div/div/article[1]/div[2]/div[1]/p",
+          "elementType": "text"
+        },
+        "publishDate": {
+          "value": "Mar 23, 2023",
+          "relativePath": "./div/div/article[1]/div[2]/div[2]/span[1]",
+          "elementType": "text"
+        },
+        "readTime": {
+          "value": "3 min read",
+          "relativePath": "./div/div/article[1]/div[2]/div[2]/span[2]",
+          "elementType": "text"
+        },
+        "thumbnail": {
+          "value": "src/content/blog/chatgpt-developers/image.jpg",
+          "relativePath": "./div/div/article[1]/div[1]/a/img",
+          "elementType": "image"
+        },
+        "categoryIcon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div/article[1]/div[2]/a/svg",
+          "elementType": "image",
+          "_suspectedType": "category-icon"
+        },
+        "dateIcon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div/article[1]/div[2]/div[2]/span[1]/svg",
+          "elementType": "image",
+          "_suspectedType": "decorative-svg"
+        },
+        "clockIcon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div/article[1]/div[2]/div[2]/span[2]/svg",
+          "elementType": "image",
+          "_suspectedType": "decorative-svg"
+        }
+      },
+      {
+        "_sourceId": "8-ways-designers-make-money",
+        "_index": 1,
+        "category": {
+          "value": "Business",
+          "relativePath": "./div/div/article[2]/div[2]/a",
+          "elementType": "link"
+        },
+        "title": {
+          "value": "8 Ways Designers Can Make Money Online in 2022",
+          "relativePath": "./div/div/article[2]/div[2]/div[1]/h3",
+          "elementType": "text"
+        },
+        "description": {
+          "value": "Learn how to leverage your skills and capitalize on various platforms to boost your income as a designer.",
+          "relativePath": "./div/div/article[2]/div[2]/div[1]/p",
+          "elementType": "text"
+        },
+        "publishDate": {
+          "value": "Mar 19, 2023",
+          "relativePath": "./div/div/article[2]/div[2]/div[2]/span[1]",
+          "elementType": "text"
+        },
+        "readTime": {
+          "value": "4 min read",
+          "relativePath": "./div/div/article[2]/div[2]/div[2]/span[2]",
+          "elementType": "text"
+        },
+        "thumbnail": {
+          "value": "src/content/blog/8-ways-designers/image.jpg",
+          "relativePath": "./div/div/article[2]/div[1]/a/img",
+          "elementType": "image"
+        },
+        "categoryIcon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div/article[2]/div[2]/a/svg",
+          "elementType": "image",
+          "_suspectedType": "category-icon"
+        },
+        "dateIcon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div/article[2]/div[2]/div[2]/span[1]/svg",
+          "elementType": "image",
+          "_suspectedType": "decorative-svg"
+        },
+        "clockIcon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div/article[2]/div[2]/div[2]/span[2]/svg",
+          "elementType": "image",
+          "_suspectedType": "decorative-svg"
+        }
+      },
+      {
+        "_sourceId": "will-ai-replace-designers",
+        "_index": 2,
+        "category": {
+          "value": "Web Development",
+          "relativePath": "./div/div/article[3]/div[2]/a",
+          "elementType": "link"
+        },
+        "title": {
+          "value": "Will Artificial Intelligence Replace Designers?",
+          "relativePath": "./div/div/article[3]/div[2]/div[1]/h3",
+          "elementType": "text"
+        },
+        "description": {
+          "value": "Explore the future of AI in design as we examine its capabilities, limitations, and the role of human creativity.",
+          "relativePath": "./div/div/article[3]/div[2]/div[1]/p",
+          "elementType": "text"
+        },
+        "publishDate": {
+          "value": "Mar 4, 2023",
+          "relativePath": "./div/div/article[3]/div[2]/div[2]/span[1]",
+          "elementType": "text"
+        },
+        "readTime": {
+          "value": "3 min read",
+          "relativePath": "./div/div/article[3]/div[2]/div[2]/span[2]",
+          "elementType": "text"
+        },
+        "thumbnail": {
+          "value": "src/content/blog/will-ai-replace/image.jpg",
+          "relativePath": "./div/div/article[3]/div[1]/a/img",
+          "elementType": "image"
+        },
+        "categoryIcon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div/article[3]/div[2]/a/svg",
+          "elementType": "image",
+          "_suspectedType": "category-icon"
+        },
+        "dateIcon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div/article[3]/div[2]/div[2]/span[1]/svg",
+          "elementType": "image",
+          "_suspectedType": "decorative-svg"
+        },
+        "clockIcon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div/article[3]/div[2]/div[2]/span[2]/svg",
+          "elementType": "image",
+          "_suspectedType": "decorative-svg"
+        }
+      }
+    ]
+  },
+  "rendering": {
+    "posts": {
+      "iterableSelector": "[data-elid='featured_posts_section'] + * > div > div > article:nth-of-type(-n+3)",
+      "fields": {
+        "category": {
+          "selector": "div:nth-of-type(2) > a",
+          "elementType": "link"
+        },
+        "title": {
+          "selector": "div:nth-of-type(2) > div:nth-of-type(1) > h3",
+          "elementType": "text"
+        },
+        "description": {
+          "selector": "div:nth-of-type(2) > div:nth-of-type(1) > p",
+          "elementType": "text"
+        },
+        "publishDate": {
+          "selector": "div:nth-of-type(2) > div:nth-of-type(2) > span:nth-of-type(1)",
+          "elementType": "text"
+        },
+        "readTime": {
+          "selector": "div:nth-of-type(2) > div:nth-of-type(2) > span:nth-of-type(2)",
+          "elementType": "text"
+        },
+        "thumbnail": {
+          "selector": "div:nth-of-type(1) > a > img",
+          "elementType": "image"
+        }
+      }
+    }
+  },
+  "styling": {
+    "collectionViews": {},
+    "collectionSelections": {
+      "posts": {
+        "ids": [
+          "chatgpt-developers-best-friend",
+          "8-ways-designers-make-money",
+          "will-ai-replace-designers"
+        ],
+        "path": "content.renderedPosts"
+      }
+    },
+    "collectionFilters": {}
+  },
+  "settings": {
+    "marker": "<div data-elid=\"featured_posts_section\" data-elid-type=\"section\">",
+    "fieldSources": {
+      "content": {
+        "type": "content-collection",
+        "module": "src/components/blog/FeaturedPosts.astro"
+      }
+    },
+    "sort_order": 6,
+    "rootLocation": "//html[1]/body[1]/section[6]"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "file": "src/pages/about.astro",
+    "slug": "workstation_section",
+    "component": "workstation_section",
+    "schemaVersion": 3,
+    "dataType": "inline",
+    "collections": {}
+  },
+  "content": {
+    "title": {
+      "value": "A tour of my gadgets and workstation",
+      "relativePath": "./div/div/div[1]/div/h2",
+      "elementType": "text"
+    },
+    "description": {
+      "value": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+      "relativePath": "./div/div/div[1]/div/p",
+      "elementType": "text"
+    },
+    "twitterLink": {
+      "value": "Follow me on Twitter",
+      "relativePath": "./div/div/div[1]/div/a",
+      "elementType": "link"
+    },
+    "twitterIcon": {
+      "value": "SVG Icon",
+      "relativePath": "./div/div/div[1]/div/a/svg",
+      "elementType": "image",
+      "_suspectedType": "social-icon"
+    },
+    "decorativeSvg1": {
+      "value": "SVG Icon",
+      "relativePath": "./div/div/div[2]/svg",
+      "elementType": "image",
+      "_suspectedType": "decorative-svg"
+    },
+    "decorativeSvg2": {
+      "value": "SVG Icon",
+      "relativePath": "./div/div/div[2]/div[1]/svg",
+      "elementType": "image",
+      "_suspectedType": "decorative-svg"
+    },
+    "workstationImage1": {
+      "value": "src/images/workstation-01.jpg",
+      "relativePath": "./div/div/div[2]/div[1]/div/img",
+      "elementType": "image"
+    },
+    "workstationImage2": {
+      "value": "src/images/workstation-02.jpg",
+      "relativePath": "./div/div/div[2]/div[2]/div/img",
+      "elementType": "image"
+    }
+  },
+  "styling": {
+    "collectionViews": {},
+    "collectionSelections": {},
+    "collectionFilters": {}
+  },
+  "settings": {
+    "marker": "<div data-elid=\"workstation_section\" data-elid-type=\"section\">",
+    "fieldSources": {
+      "content": {
+        "type": "inline",
+        "module": "src/components/Workstation.astro"
+      }
+    },
+    "sort_order": 3,
+    "rootLocation": "//html[1]/body[1]/section[3]"
+  },
+  "rendering": {}
+}

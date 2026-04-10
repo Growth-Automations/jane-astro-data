@@ -1,0 +1,319 @@
+{
+  "meta": {
+    "file": "src/pages/index.astro",
+    "slug": "featured_work_section",
+    "component": "featured_work_section",
+    "schemaVersion": 3,
+    "dataType": "content-collection",
+    "collections": {
+      "caseStudies": {
+        "path": "content.renderedCaseStudies",
+        "libraryKey": "content.renderedCaseStudies",
+        "itemRole": "markdown",
+        "keyField": "title",
+        "source": {
+          "type": "content-collection",
+          "module": "src/content/work/",
+          "path": "$",
+          "notes": "Astro content collection \"work\" — sorted via getSortedCaseStudies(), top 4 displayed"
+        },
+        "fields": {
+          "label": {
+            "path": "label.value"
+          },
+          "title": {
+            "path": "title.value"
+          },
+          "description": {
+            "path": "description.value"
+          },
+          "ctaText": {
+            "path": "ctaText.value"
+          },
+          "thumbnail": {
+            "path": "thumbnail.value"
+          },
+          "categoryIcon": {
+            "type": "dom"
+          },
+          "arrowIcon": {
+            "type": "dom"
+          },
+          "decorativeSvg": {
+            "type": "dom"
+          }
+        },
+        "saveRules": {
+          "itemInsertMode": "append",
+          "allowedActions": [
+            "itemInsert",
+            "itemUpdate",
+            "itemDelete",
+            "itemReorder"
+          ],
+          "steps": [
+            "write",
+            "format"
+          ],
+          "instructions": "4 case study items (label, title, description, ctaText, thumbnail) from Astro content collection",
+          "defaultAccess": "read-only"
+        }
+      }
+    }
+  },
+  "content": {
+    "title": {
+      "value": "Check out my latest work",
+      "relativePath": "./div/div[1]/h2",
+      "elementType": "text"
+    },
+    "description": {
+      "value": "My goal is to create effective digital experiences that make people's lives easier and better. I hope my work is a reflection of this.",
+      "relativePath": "./div/div[1]/p",
+      "elementType": "text"
+    },
+    "renderedCaseStudies": [
+      {
+        "_sourceId": "horizons-in-perspective",
+        "_index": 0,
+        "label": {
+          "value": "Branding",
+          "relativePath": "./div/div[2]/div[1]/div/div",
+          "elementType": "text"
+        },
+        "title": {
+          "value": "Horizons in Perspective",
+          "relativePath": "./div/div[2]/div[1]/div/h3",
+          "elementType": "text"
+        },
+        "description": {
+          "value": "I helped Horizons in Perspective develop a new branding and website experience, including a logo, color palette, and typography.",
+          "relativePath": "./div/div[2]/div[1]/div/p",
+          "elementType": "text"
+        },
+        "ctaText": {
+          "value": "View Case Study",
+          "relativePath": "./div/div[2]/div[1]/div/a",
+          "elementType": "link"
+        },
+        "thumbnail": {
+          "value": "src/content/caseStudies/horizons-in-perspective/thumbnail.jpg",
+          "relativePath": "./div/div[2]/div[1]/a/img",
+          "elementType": "image"
+        },
+        "categoryIcon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div[2]/div[1]/div/div/svg",
+          "elementType": "image",
+          "_suspectedType": "category-icon"
+        },
+        "arrowIcon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div[2]/div[1]/div/a/svg",
+          "elementType": "image",
+          "_suspectedType": "decorative-svg"
+        },
+        "decorativeSvg": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div[2]/div[1]/svg",
+          "elementType": "image",
+          "_suspectedType": "decorative-svg"
+        }
+      },
+      {
+        "_sourceId": "wavvy",
+        "_index": 1,
+        "label": {
+          "value": "Product Development",
+          "relativePath": "./div/div[2]/div[2]/div/div",
+          "elementType": "text"
+        },
+        "title": {
+          "value": "Wavvy",
+          "relativePath": "./div/div[2]/div[2]/div/h3",
+          "elementType": "text"
+        },
+        "description": {
+          "value": "Revamping Wavvy's online presence with a website redesign, branding enhancement, and custom website development.",
+          "relativePath": "./div/div[2]/div[2]/div/p",
+          "elementType": "text"
+        },
+        "ctaText": {
+          "value": "View Case Study",
+          "relativePath": "./div/div[2]/div[2]/div/a",
+          "elementType": "link"
+        },
+        "thumbnail": {
+          "value": "src/content/caseStudies/wavvy/thumbnail.jpg",
+          "relativePath": "./div/div[2]/div[2]/a/img",
+          "elementType": "image"
+        },
+        "categoryIcon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div[2]/div[2]/div/div/svg",
+          "elementType": "image",
+          "_suspectedType": "category-icon"
+        },
+        "arrowIcon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div[2]/div[2]/div/a/svg",
+          "elementType": "image",
+          "_suspectedType": "decorative-svg"
+        },
+        "decorativeSvg": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div[2]/div[2]/svg",
+          "elementType": "image",
+          "_suspectedType": "decorative-svg"
+        }
+      },
+      {
+        "_sourceId": "banter",
+        "_index": 2,
+        "label": {
+          "value": "Consulting",
+          "relativePath": "./div/div[2]/div[3]/div/div",
+          "elementType": "text"
+        },
+        "title": {
+          "value": "Banter",
+          "relativePath": "./div/div[2]/div[3]/div/h3",
+          "elementType": "text"
+        },
+        "description": {
+          "value": "Transforming Banter's digital presence through website redesign, branding enhancement, and custom website development.",
+          "relativePath": "./div/div[2]/div[3]/div/p",
+          "elementType": "text"
+        },
+        "ctaText": {
+          "value": "View Case Study",
+          "relativePath": "./div/div[2]/div[3]/div/a",
+          "elementType": "link"
+        },
+        "thumbnail": {
+          "value": "src/content/caseStudies/banter/thumbnail.jpg",
+          "relativePath": "./div/div[2]/div[3]/a/img",
+          "elementType": "image"
+        },
+        "categoryIcon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div[2]/div[3]/div/div/svg",
+          "elementType": "image",
+          "_suspectedType": "category-icon"
+        },
+        "arrowIcon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div[2]/div[3]/div/a/svg",
+          "elementType": "image",
+          "_suspectedType": "decorative-svg"
+        },
+        "decorativeSvg": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div[2]/div[3]/svg",
+          "elementType": "image",
+          "_suspectedType": "decorative-svg"
+        }
+      },
+      {
+        "_sourceId": "bright-school",
+        "_index": 3,
+        "label": {
+          "value": "Web Development",
+          "relativePath": "./div/div[2]/div[4]/div/div",
+          "elementType": "text"
+        },
+        "title": {
+          "value": "Bright School",
+          "relativePath": "./div/div[2]/div[4]/div/h3",
+          "elementType": "text"
+        },
+        "description": {
+          "value": "Revitalizing Bright School's online presence with a redesigned website, branding refresh, and custom website development.",
+          "relativePath": "./div/div[2]/div[4]/div/p",
+          "elementType": "text"
+        },
+        "ctaText": {
+          "value": "View Case Study",
+          "relativePath": "./div/div[2]/div[4]/div/a",
+          "elementType": "link"
+        },
+        "thumbnail": {
+          "value": "src/content/caseStudies/bright-school/thumbnail.jpg",
+          "relativePath": "./div/div[2]/div[4]/a/img",
+          "elementType": "image"
+        },
+        "categoryIcon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div[2]/div[4]/div/div/svg",
+          "elementType": "image",
+          "_suspectedType": "category-icon"
+        },
+        "arrowIcon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div[2]/div[4]/div/a/svg",
+          "elementType": "image",
+          "_suspectedType": "decorative-svg"
+        },
+        "decorativeSvg": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div[2]/div[4]/svg",
+          "elementType": "image",
+          "_suspectedType": "decorative-svg"
+        }
+      }
+    ]
+  },
+  "rendering": {
+    "caseStudies": {
+      "iterableSelector": "[data-elid='featured_work_section'] + * .grid > div",
+      "fields": {
+        "label": {
+          "selector": "div > div",
+          "elementType": "text"
+        },
+        "title": {
+          "selector": "div > h3",
+          "elementType": "text"
+        },
+        "description": {
+          "selector": "div > p",
+          "elementType": "text"
+        },
+        "ctaText": {
+          "selector": "div > a",
+          "elementType": "link"
+        },
+        "thumbnail": {
+          "selector": "a > img",
+          "elementType": "image"
+        }
+      }
+    }
+  },
+  "styling": {
+    "collectionViews": {},
+    "collectionSelections": {
+      "caseStudies": {
+        "ids": [
+          "horizons-in-perspective",
+          "wavvy",
+          "banter",
+          "bright-school"
+        ],
+        "path": "content.renderedCaseStudies"
+      }
+    },
+    "collectionFilters": {}
+  },
+  "settings": {
+    "marker": "<div data-elid=\"featured_work_section\" data-elid-type=\"section\">",
+    "fieldSources": {
+      "content": {
+        "type": "content-collection",
+        "module": "src/components/work/FeaturedWork.astro"
+      }
+    },
+    "sort_order": 4,
+    "rootLocation": "//html[1]/body[1]/section[4]"
+  }
+}

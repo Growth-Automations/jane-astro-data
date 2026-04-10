@@ -1,0 +1,246 @@
+{
+  "meta": {
+    "file": "src/pages/index.astro",
+    "slug": "experience_section",
+    "component": "experience_section",
+    "schemaVersion": 3,
+    "dataType": "inline",
+    "collections": {
+      "features": {
+        "path": "content.renderedFeatures",
+        "libraryKey": "content.renderedFeatures",
+        "itemRole": "inline",
+        "keyField": "title",
+        "source": {
+          "type": "inline",
+          "module": "src/components/Experience.astro",
+          "path": "features"
+        },
+        "fields": {
+          "title": {
+            "path": "title.value"
+          },
+          "description": {
+            "path": "description.value"
+          },
+          "icon": {
+            "path": "icon.value",
+            "type": "dom"
+          }
+        },
+        "saveRules": {
+          "itemInsertMode": "append",
+          "allowedActions": [
+            "itemUpdate",
+            "itemReorder"
+          ],
+          "steps": [
+            "write",
+            "format"
+          ],
+          "instructions": "3 feature items (title, description, icon) defined in Experience.astro frontmatter",
+          "defaultAccess": "read-only"
+        }
+      }
+    }
+  },
+  "content": {
+    "title": {
+      "value": "I'm your all-in-one project solution",
+      "relativePath": "./div/div[1]/div[1]/h2",
+      "elementType": "text"
+    },
+    "titleUnderline": {
+      "value": "SVG Icon",
+      "relativePath": "./div/div[1]/div[1]/h2/span/svg",
+      "elementType": "image",
+      "_suspectedType": "decorative-svg"
+    },
+    "description": {
+      "value": "Experience the advantage of an all-inclusive project solution, where excellence, speed, and responsiveness converge to ensure the highest quality outcome.",
+      "relativePath": "./div/div[1]/div[2]/p",
+      "elementType": "text"
+    },
+    "annotation": {
+      "value": "What differentiates me from others",
+      "relativePath": "./div/div[2]/div[1]/ul/div/span",
+      "elementType": "text"
+    },
+    "annotationArrow": {
+      "value": "SVG Icon",
+      "relativePath": "./div/div[2]/div[1]/ul/div/svg",
+      "elementType": "image",
+      "_suspectedType": "decorative-svg"
+    },
+    "yearsExperience": {
+      "value": "10",
+      "relativePath": "./div/div[2]/div[2]",
+      "elementType": "text"
+    },
+    "yearsLabel": {
+      "value": "Years of experience",
+      "relativePath": "./div/div[2]/div[2]/div",
+      "elementType": "text"
+    },
+    "projectsCompleted": {
+      "value": "150",
+      "relativePath": "./div/div[2]/div[2]/div/div",
+      "elementType": "text"
+    },
+    "projectsLabel": {
+      "value": "Projects completed",
+      "relativePath": "./div/div[2]",
+      "elementType": "text"
+    },
+    "experienceImage": {
+      "value": "src/images/experience-image.jpg",
+      "relativePath": "./div/div[2]/div[2]/div/img",
+      "elementType": "image"
+    },
+    "resumeSpinnerSvg": {
+      "value": "SVG Icon",
+      "relativePath": "./div/div[2]/div[2]/div/div/div/svg",
+      "elementType": "image",
+      "_suspectedType": "decorative-svg"
+    },
+    "downloadButtonSvg": {
+      "value": "SVG Icon",
+      "relativePath": "./div/div[2]/div[2]/div/div/div/button/svg",
+      "elementType": "image",
+      "_suspectedType": "button-icon"
+    },
+    "statsDecorationSvg": {
+      "value": "SVG Icon",
+      "relativePath": "./div/div[2]/div[2]/div/div/svg",
+      "elementType": "image",
+      "_suspectedType": "decorative-svg"
+    },
+    "renderedFeatures": [
+      {
+        "_sourceId": "excellence",
+        "_index": 0,
+        "title": {
+          "value": "Excellence",
+          "relativePath": "./div/div[2]/div[1]/ul/li[1]/div/div/div[2]/h3",
+          "elementType": "text"
+        },
+        "description": {
+          "value": "I take pride in doing things well. All client work is done with the best quality possible.",
+          "relativePath": "./div/div[2]/div[1]/ul/li[1]/div/div/div[2]/p",
+          "elementType": "text"
+        },
+        "icon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div[2]/div[1]/ul/li[1]/div/div/div[1]/span/svg",
+          "elementType": "image",
+          "_suspectedType": "feature-icon"
+        },
+        "iconName": {
+          "value": "stamp",
+          "_suspectedType": "icon",
+          "isShown": false,
+          "visibilityState": "hidden:attribute_only",
+          "note": "Icon name used by astro-icon component to render SVG"
+        }
+      },
+      {
+        "_sourceId": "speed",
+        "_index": 1,
+        "title": {
+          "value": "Speed",
+          "relativePath": "./div/div[2]/div[1]/ul/li[2]/div/div/div[2]/h3",
+          "elementType": "text"
+        },
+        "description": {
+          "value": "I like to work hard and fast. I know how important deadlines are to my clients.",
+          "relativePath": "./div/div[2]/div[1]/ul/li[2]/div/div/div[2]/p",
+          "elementType": "text"
+        },
+        "icon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div[2]/div[1]/ul/li[2]/div/div/div[1]/span/svg",
+          "elementType": "image",
+          "_suspectedType": "feature-icon"
+        },
+        "iconName": {
+          "value": "hourglass",
+          "_suspectedType": "icon",
+          "isShown": false,
+          "visibilityState": "hidden:attribute_only",
+          "note": "Icon name used by astro-icon component to render SVG"
+        }
+      },
+      {
+        "_sourceId": "responsiveness",
+        "_index": 2,
+        "title": {
+          "value": "Responsiveness",
+          "relativePath": "./div/div[2]/div[1]/ul/li[3]/div/div/div[2]/h3",
+          "elementType": "text"
+        },
+        "description": {
+          "value": "You can rely on me to be responsive and clear whenever we work together.",
+          "relativePath": "./div/div[2]/div[1]/ul/li[3]/div/div/div[2]/p",
+          "elementType": "text"
+        },
+        "icon": {
+          "value": "SVG Icon",
+          "relativePath": "./div/div[2]/div[1]/ul/li[3]/div/div/div[1]/span/svg",
+          "elementType": "image",
+          "_suspectedType": "feature-icon"
+        },
+        "iconName": {
+          "value": "users-meeting",
+          "_suspectedType": "icon",
+          "isShown": false,
+          "visibilityState": "hidden:attribute_only",
+          "note": "Icon name used by astro-icon component to render SVG"
+        }
+      }
+    ]
+  },
+  "rendering": {
+    "features": {
+      "iterableSelector": "[data-elid='experience_section'] + * ul > li",
+      "fields": {
+        "title": {
+          "selector": "div div div:nth-of-type(2) h3",
+          "elementType": "text"
+        },
+        "description": {
+          "selector": "div div div:nth-of-type(2) p",
+          "elementType": "text"
+        },
+        "icon": {
+          "selector": "div div div:nth-of-type(1) span svg",
+          "elementType": "image"
+        }
+      }
+    }
+  },
+  "styling": {
+    "collectionViews": {},
+    "collectionSelections": {
+      "features": {
+        "ids": [
+          "excellence",
+          "speed",
+          "responsiveness"
+        ],
+        "path": "content.renderedFeatures"
+      }
+    },
+    "collectionFilters": {}
+  },
+  "settings": {
+    "marker": "<div data-elid=\"experience_section\" data-elid-type=\"section\">",
+    "fieldSources": {
+      "content": {
+        "type": "inline",
+        "module": "src/components/Experience.astro"
+      }
+    },
+    "sort_order": 2,
+    "rootLocation": "//html[1]/body[1]/section[2]"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "file": "src/pages/about.astro",
+    "slug": "about_hero_section",
+    "component": "about_hero_section",
+    "schemaVersion": 3,
+    "dataType": "inline",
+    "collections": {}
+  },
+  "content": {
+    "title": {
+      "value": "Hi, I'm Jane and I'm a designer & developer",
+      "relativePath": "./div[1]/div/h1",
+      "elementType": "text"
+    },
+    "paragraph1": {
+      "value": "Pumpkin seasonal rich froth decaffeinated trifecta organic blue panna doppio. Body a whipped lungo variety spice seasonal body press mountain con macchiato. Medium coffee single white to caramelization siphon con siphon id as con go single. So ristretto pumpkin affogato cinnamon breve turkish organic. Lait black kopi dripper spice lait cultivar robusta panna whipped and sit aromatic sugar.",
+      "relativePath": "./div[1]/div/p[1]",
+      "elementType": "text"
+    },
+    "paragraph2": {
+      "value": "And café frappuccino extraction filter froth sugar siphon coffee pumpkin press milk ristretto et au. Trade instant aged as wings bar seasonal pumpkin barista turkish shot go seasonal robusta. Strong iced lungo frappuccino espresso redeye macchiato aftertaste trade pot. Seasonal turkish mocha wings sit crema blue au and grounds eu cortado café cup. Filter viennese bar seasonal wings siphon as frappuccino go luwak single mazagran.",
+      "relativePath": "./div[1]/div/p[2]",
+      "elementType": "text"
+    },
+    "signature": {
+      "value": "Jane Doe",
+      "relativePath": "./div[1]/div/p[3]",
+      "elementType": "text"
+    },
+    "bgGradient": {
+      "value": "src/images/about-hero-gradient.svg",
+      "relativePath": "./img",
+      "elementType": "image"
+    },
+    "titleUnderline": {
+      "value": "SVG Icon",
+      "relativePath": "./div[1]/div/h1/span/svg",
+      "elementType": "image",
+      "_suspectedType": "decorative-svg"
+    },
+    "heroImage": {
+      "value": "src/images/about-hero.png",
+      "relativePath": "./div[2]/img",
+      "elementType": "image"
+    },
+    "curvyLines": {
+      "value": "SVG Icon",
+      "relativePath": "./div[2]/svg",
+      "elementType": "image",
+      "_suspectedType": "decorative-svg"
+    }
+  },
+  "styling": {
+    "collectionViews": {},
+    "collectionSelections": {},
+    "collectionFilters": {}
+  },
+  "settings": {
+    "marker": "<div data-elid=\"about_hero_section\" data-elid-type=\"section\">",
+    "fieldSources": {
+      "content": {
+        "type": "inline",
+        "module": "src/components/AboutHero.astro"
+      }
+    },
+    "sort_order": 1,
+    "rootLocation": "//html[1]/body[1]/section[1]"
+  },
+  "rendering": {}
+}

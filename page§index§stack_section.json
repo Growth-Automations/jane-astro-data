@@ -1,0 +1,298 @@
+{
+  "meta": {
+    "file": "src/pages/index.astro",
+    "slug": "stack_section",
+    "component": "stack_section",
+    "schemaVersion": 3,
+    "dataType": "inline",
+    "collections": {
+      "stackItems": {
+        "path": "content.renderedStackItems",
+        "libraryKey": "content.renderedStackItems",
+        "itemRole": "config",
+        "keyField": "name",
+        "source": {
+          "type": "config-module",
+          "module": "src/config.ts",
+          "path": "STACK"
+        },
+        "fields": {
+          "logo": {
+            "path": "logo.value"
+          },
+          "name": {
+            "path": "name.value"
+          }
+        },
+        "saveRules": {
+          "itemInsertMode": "append",
+          "allowedActions": [
+            "itemUpdate"
+          ],
+          "steps": [
+            "write",
+            "format"
+          ],
+          "instructions": "13 stack items (logo, name) from config.ts STACK array displayed as logo grid",
+          "defaultAccess": "read-only"
+        }
+      }
+    }
+  },
+  "content": {
+    "annotation": {
+      "value": "The tools I use on my day-to-day",
+      "relativePath": "./div[3]/span",
+      "elementType": "text"
+    },
+    "annotationArrow": {
+      "value": "SVG Icon",
+      "relativePath": "./div[3]/svg",
+      "elementType": "image",
+      "_suspectedType": "decorative-svg"
+    },
+    "renderedStackItems": [
+      {
+        "_sourceId": "javascript",
+        "_index": 0,
+        "logo": {
+          "value": "src/images/logos/icons/javascript.svg",
+          "relativePath": "./div[4]/img",
+          "elementType": "image"
+        },
+        "name": {
+          "value": "Javascript",
+          "isShown": false,
+          "visibilityState": "hidden:attribute_only",
+          "note": "Rendered as img alt attribute, not standalone text"
+        }
+      },
+      {
+        "_sourceId": "html5",
+        "_index": 1,
+        "logo": {
+          "value": "src/images/logos/icons/html5.svg",
+          "relativePath": "./div[5]/img",
+          "elementType": "image"
+        },
+        "name": {
+          "value": "HTML5",
+          "isShown": false,
+          "visibilityState": "hidden:attribute_only",
+          "note": "Rendered as img alt attribute, not standalone text"
+        }
+      },
+      {
+        "_sourceId": "css",
+        "_index": 2,
+        "logo": {
+          "value": "src/images/logos/icons/css.svg",
+          "relativePath": "./div[6]/img",
+          "elementType": "image"
+        },
+        "name": {
+          "value": "CSS",
+          "isShown": false,
+          "visibilityState": "hidden:attribute_only",
+          "note": "Rendered as img alt attribute, not standalone text"
+        }
+      },
+      {
+        "_sourceId": "tailwind",
+        "_index": 3,
+        "logo": {
+          "value": "src/images/logos/icons/tailwind.svg",
+          "relativePath": "./div[7]/img",
+          "elementType": "image"
+        },
+        "name": {
+          "value": "Tailwind",
+          "isShown": false,
+          "visibilityState": "hidden:attribute_only",
+          "note": "Rendered as img alt attribute, not standalone text"
+        }
+      },
+      {
+        "_sourceId": "figma",
+        "_index": 4,
+        "logo": {
+          "value": "src/images/logos/icons/figma.svg",
+          "relativePath": "./div[8]/img",
+          "elementType": "image"
+        },
+        "name": {
+          "value": "Figma",
+          "isShown": false,
+          "visibilityState": "hidden:attribute_only",
+          "note": "Rendered as img alt attribute, not standalone text"
+        }
+      },
+      {
+        "_sourceId": "sketch",
+        "_index": 5,
+        "logo": {
+          "value": "src/images/logos/icons/sketch.svg",
+          "relativePath": "./div[9]/img",
+          "elementType": "image"
+        },
+        "name": {
+          "value": "Sketch",
+          "isShown": false,
+          "visibilityState": "hidden:attribute_only",
+          "note": "Rendered as img alt attribute, not standalone text"
+        }
+      },
+      {
+        "_sourceId": "rails",
+        "_index": 6,
+        "logo": {
+          "value": "src/images/logos/icons/rails.svg",
+          "relativePath": "./div[10]/img",
+          "elementType": "image"
+        },
+        "name": {
+          "value": "Rails",
+          "isShown": false,
+          "visibilityState": "hidden:attribute_only",
+          "note": "Rendered as img alt attribute, not standalone text"
+        }
+      },
+      {
+        "_sourceId": "netlify",
+        "_index": 7,
+        "logo": {
+          "value": "src/images/logos/icons/netlify.svg",
+          "relativePath": "./div[11]/img",
+          "elementType": "image"
+        },
+        "name": {
+          "value": "Netlify",
+          "isShown": false,
+          "visibilityState": "hidden:attribute_only",
+          "note": "Rendered as img alt attribute, not standalone text"
+        }
+      },
+      {
+        "_sourceId": "python",
+        "_index": 8,
+        "logo": {
+          "value": "src/images/logos/icons/python.svg",
+          "relativePath": "./div[12]/img",
+          "elementType": "image"
+        },
+        "name": {
+          "value": "Python",
+          "isShown": false,
+          "visibilityState": "hidden:attribute_only",
+          "note": "Rendered as img alt attribute, not standalone text"
+        }
+      },
+      {
+        "_sourceId": "postgresql",
+        "_index": 9,
+        "logo": {
+          "value": "src/images/logos/icons/postgresql.svg",
+          "relativePath": "./div[13]/img",
+          "elementType": "image"
+        },
+        "name": {
+          "value": "Postgresql",
+          "isShown": false,
+          "visibilityState": "hidden:attribute_only",
+          "note": "Rendered as img alt attribute, not standalone text"
+        }
+      },
+      {
+        "_sourceId": "firebase",
+        "_index": 10,
+        "logo": {
+          "value": "src/images/logos/icons/firebase.svg",
+          "relativePath": "./div[14]/img",
+          "elementType": "image"
+        },
+        "name": {
+          "value": "Firebase",
+          "isShown": false,
+          "visibilityState": "hidden:attribute_only",
+          "note": "Rendered as img alt attribute, not standalone text"
+        }
+      },
+      {
+        "_sourceId": "c-programming-language",
+        "_index": 11,
+        "logo": {
+          "value": "src/images/logos/icons/c.svg",
+          "relativePath": "./div[15]/img",
+          "elementType": "image"
+        },
+        "name": {
+          "value": "C programming language",
+          "isShown": false,
+          "visibilityState": "hidden:attribute_only",
+          "note": "Rendered as img alt attribute, not standalone text"
+        }
+      },
+      {
+        "_sourceId": "ruby",
+        "_index": 12,
+        "logo": {
+          "value": "src/images/logos/icons/ruby.svg",
+          "relativePath": "./div[16]/img",
+          "elementType": "image"
+        },
+        "name": {
+          "value": "Ruby",
+          "isShown": false,
+          "visibilityState": "hidden:attribute_only",
+          "note": "Rendered as img alt attribute, not standalone text"
+        }
+      }
+    ]
+  },
+  "rendering": {
+    "stackItems": {
+      "iterableSelector": "[data-elid='stack_section'] + * > div:not(:first-child):not(:nth-child(2)):not(:nth-child(3))",
+      "fields": {
+        "logo": {
+          "selector": "img",
+          "elementType": "image"
+        }
+      }
+    }
+  },
+  "styling": {
+    "collectionViews": {},
+    "collectionSelections": {
+      "stackItems": {
+        "ids": [
+          "javascript",
+          "html5",
+          "css",
+          "tailwind",
+          "figma",
+          "sketch",
+          "rails",
+          "netlify",
+          "python",
+          "postgresql",
+          "firebase",
+          "c-programming-language",
+          "ruby"
+        ],
+        "path": "content.renderedStackItems"
+      }
+    },
+    "collectionFilters": {}
+  },
+  "settings": {
+    "marker": "<div data-elid=\"stack_section\" data-elid-type=\"section\">",
+    "fieldSources": {
+      "content": {
+        "type": "config-module",
+        "module": "src/config.ts"
+      }
+    },
+    "sort_order": 3,
+    "rootLocation": "//html[1]/body[1]/section[3]"
+  }
+}
